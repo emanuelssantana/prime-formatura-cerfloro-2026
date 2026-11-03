@@ -40,3 +40,6 @@ Para verificar o validador: `npm test` (Node; sem dependências externas).
 Mídias reais, provider, cards docentes preenchidos, reprodução auditiva/iPhone, CRM C10/C16, artigos de escolas/BPA/SEDAM e QA completo continuam pendentes. Não classificar o projeto completo por existir esta base. Não copiar preços de Mugiwara/XCM para o congresso. Não presumir apoio institucional.
 
 Autor da implementação: Codex Dell G3, a pedido de Emanuel Santana, 03/11/2026 America/Manaus. Os originais Mugiwara/XCM permanecem intactos.
+
+## Revisão com o ChatGPT
+Abra [o roteiro de auditoria](docs/PARA_CHATGPT.md). A comprovação dos arquivos que o WordPress está servindo está em [VERIFICACAO_PUBLICA.json](docs/VERIFICACAO_PUBLICA.json). Há imagens de referência com ambiente e versão identificados em docs/imagens.

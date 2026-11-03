@@ -4,7 +4,7 @@ Emanuel autorizou nesta conversa repositório separado e trabalho direto no Word
 
 ## Recursos
 - Central e página do evento criadas no WordPress (2436/2437).
-- Release 0.1.1 em publicação: módulos v1.4 sem a faixa PREVIEW em produção; falas/docentes/drone permanecem EM_CURADORIA quando sem mídia validada.
+- Release 0.1.1 publicada e verificada por HTTP/hash: módulos v1.4 sem a faixa PREVIEW em produção; falas/docentes/drone permanecem EM_CURADORIA quando sem mídia validada.
 - Sete testes Node de manifesto aprovados. Browser: seis larguras 320/375/390/768/1024/1440 sem overflow do documento; filtro Dia2 e FAQ abertos com sucesso no preview. Não equivale a playback com mídia real ou teste Safari físico.
 - Bug de MIME .mjs em hosting corrigido usando .js de módulo. O plugin enfileira assets só nas páginas dos shortcodes.
 
@@ -27,3 +27,4 @@ Neste módulo CRM permanece desligado. A presença de outros conectores Prime no
 
 ## Reversão
 Backup privado antes de cada versão; restaurar somente arquivos deste plugin e limpar o cache correspondente. Não reverter páginas ou plugins de outras equipes. Nova publicação não inclui migração de banco. Segredos e backups sensíveis ficam fora do GitHub público.
+
