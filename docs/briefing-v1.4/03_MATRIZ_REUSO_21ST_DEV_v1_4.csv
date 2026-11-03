@@ -1,0 +1,21 @@
+﻿modulo;doador;reuso_adaptacao;21st_fonte_ou_busca;destino_stack;licenca_ou_validacao;prioridade;risco
+Hero drone UNIR;acervo original Emanuel;Video muted/poster, scroll reveal;native CSS/JS video;Prime/wp bundle;autor original, arquivo não localizado;P0;Não use foto stock e não reproduza áudio sem clique
+Hero motion;novo;Gradient + parallax discreto;"21st search ""hero parallax"" (sem slug presumido)";CSS nativo ou ilha React;validar componente escolhido;P1;"reduced-motion; 4G; iOS"
+Carrosséis temáticos;Mugiwara v11/v12;card, slideshow, legenda, temas;https://21st.dev/@cult-ui/components/3d-carousel;React island ou CSS carrossel;"MIT; framer-motion, validar download";P0;NÃO editar fonte do Mugiwara
+Galeria per-person;XCM YuNet/SFace;grouping, revisão/contagem, deeplink;https://21st.dev/@piyushxdev/components/3d-parallax-unfurling-gallery;backend offline + CSS/React ilha;"MIT; framer-motion";P1;separar candidatos, não divulgar biometria
+Galeria 3D opcional;21st seleção 2026;esfera fotos contextual;https://21st.dev/@tonyzebastian/components/image-sphere;somente vitrine não essencial;licença e dependências verificar;P2;peso GPU/acessibilidade
+Galeria WebGL opcional;21st seleção 2026;album 3D;https://21st.dev/@moazamtrade/components/3d-image-gallery;React island isolada ou descartar;"three, drei, fiber, lucide-react; licença verificar";P3;carga pesada e Safari
+Timeline científica;novo + registro 2024;linhas cronológicas 2024 e 2026;"21st search ""timeline"" ; link histórico 3d timeline retornou 404";CSS + JS nativo;verificar origem e direitos das fotos;P1;Rolim evento anterior distinto
+Slides fotografados;fotos reais do usuário;zoom/lazy, contraste, legendas;"21st search ""image lightbox""";HTML dialog acessível + CSS;direitos do docente/editor;P0;sem OCR para fórmulas
+Frases marcantes;áudio gravado do usuário;3 por palestrante, clips/timestamps;"21st search ""quote card""";quote component + audio native;gravação e literal conferidos;P0;não inventar citações
+Áudio e trilha dedicada;Mugiwara player + XCM;3 quote clips + audio focus/ducking;"21st search ""audio player""";central audio manager;licença por track/voz;P0;sem autoplay audível
+Perguntas plateia;fotos+autoapresentações;foto microfone, pergunta, resposta;"21st search ""qa accordion""";session-scoped data component;conferência humana e autorização;P0;não inferir nomes só pelo rosto
+Drags/swipes/hover;Mugiwara;transições e carrosséis;https://21st.dev/@cult-ui/components/3d-carousel;Progressive enhancement;MIT da fonte do componente;P1;touch/keyboard/reduced-motion
+FAQ;Mugiwara 11 perguntas;dúvidas foto, slides, compra;"21st search ""accordion faq""";details/summary;conteúdo novo aprovado;P1;não herdar preços antigos
+Redes e marcas irmãs;Mugiwara;cards redes/links institucionais;"21st search ""logo carousel""";HTML links;logo/representação autorizados;P1;sem prometer apoio oficial
+Coletivo/pôsteres;XCM gallery e Mugiwara carrosséis;fotos por sessão/dia;"21st search ""masonry gallery""";grid CSS + manifest;fotos com autorização;P1;sem duplicar RAW
+Galeria venda;Mugiwara CTA + XCM álbuns;botões para checkout e política por pasta;"21st search ""pricing card""";links provedores reais;verificar Banlek/Fotto/Fottop;P1;não criar preço não existente
+Vídeo por docente;XCM masters e filmagem CERFloRO;video reels e teasers;"21st search ""video card""";native video/host player;direitos voz + imagens + música;P2;prefetch só quando necessário
+Chatbot e CRM;Rakabia Global Prime;FAQ/opt-in/lead/consultas;21st Agent Elements opcional (não requisitado);API C10/C16 distinta;"C10 staging; prod pendente";P2;sem usar C15 em sessão científica
+Desempenho e acessibilidade;bugs Mugiwara/XCM;CLS, focus, mobile dock;components escolhidos sob teste;automated QA;WCAG/meta LCP/INP/CLS;P0;reduced motion + CSS namespace
+SEO/canonical;Prime/WordPress;permalink, OG, JSON-LD, sitemaps;não requer 21st;WP theme integration;site e rota verificados;P1;não inventar URL Prime

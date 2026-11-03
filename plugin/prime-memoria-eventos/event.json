@@ -1,0 +1,50 @@
+{
+  "schema": "prime-event-memory.v1",
+  "eventId": "ii-cerfloro-2026",
+  "brand": "Prime Formatura",
+  "dates": [
+    "2026-11-03",
+    "2026-11-04"
+  ],
+  "photographer": "Emanuel Santana",
+  "delivery": {
+    "url": "",
+    "mode": "free",
+    "label": "Fotografias em alta resolução · acesso gratuito",
+    "status": "preparing",
+    "providerVerified": false
+  },
+  "drone": {
+    "url": "",
+    "poster": "",
+    "rightsConfirmed": false,
+    "reviewed": false
+  },
+  "media": [],
+  "speakers": [],
+  "crm": {
+    "enabled": false,
+    "tenantId": null,
+    "installationId": null
+  },
+  "sources": [
+    "https://www.even3.com.br/iicerfloro-760904/"
+  ],
+  "brand_code": "PRIME_FORMATURAS",
+  "event_code": "CERFLORO_2026",
+  "sessions": [],
+  "timeline": [
+    {
+      "year": "2024",
+      "title": "I CERFloRO · Ji-Paraná",
+      "description": "O registro da primeira edição informa realização de 16 a 18 de setembro de 2024 no IFRO Campus Ji-Paraná. Fotografias dessa edição ainda não fazem parte deste acervo.",
+      "source": "https://www.even3.com.br/cerfloro-478846/"
+    },
+    {
+      "year": "2026",
+      "title": "II CERFloRO · uma nova memória",
+      "description": "A cobertura de Emanuel Santana reúne registros dos dias 3 e 4 de novembro. Novos lotes serão acrescentados ao mesmo endereço.",
+      "source": "https://www.even3.com.br/iicerfloro-760904/"
+    }
+  ]
+}

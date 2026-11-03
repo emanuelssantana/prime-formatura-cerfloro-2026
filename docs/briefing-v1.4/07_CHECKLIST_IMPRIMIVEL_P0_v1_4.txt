@@ -1,0 +1,23 @@
+CHECKLIST CERFLORO / CODEX DELL G3 — P0 (03/11/2026)
+
+[ ] Verificar G: e pasta oficial 
+[ ] Ler 00_INICIAR_AQUI e 01_PLANO_DIRETOR
+[ ] Ler 02_GLOBAL_PRIME e sua revisão mais nova
+[ ] Localizar handoff/código Mugiwara, sem alterar
+[ ] Localizar handoff/código XCM, sem alterar
+[ ] Identificar site e WordPress PRIME reais
+[ ] Registrar URL, ID, hash, screenshots dos legados
+[ ] Verificar a disponibilidade de vídeo DRONE DA UNIR
+[ ] Verificar fotos, áudios, slides e direito de uso
+[ ] Separar cada professor e exatamente 3 frases dele
+[ ] Buscar 21st.dev e registrar licença por componente
+[ ] Definir build WP isolado + animações leves
+[ ] Validar C10 staging; produção continua OFF
+[ ] Manter dados faciais e áudio privados fora do CRM
+[ ] Criar worktree/branch isolados; backup e rollback
+[ ] Gerar 99_ACK/ACK_000 com evidências e pendências
+
+DATA/HORA: ______   HOST: ______   GIT SHA: ______
+PENDÊNCIAS: __________________________________________
+REVISÃO HUMANA: ______________________________________
+NÃO PUBLICAR SEM APROVAÇÃO.

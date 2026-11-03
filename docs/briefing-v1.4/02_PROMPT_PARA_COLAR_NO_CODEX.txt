@@ -1,0 +1,23 @@
+CODEX DELL G3 — EXECUÇÃO ORQUESTRADA PRIME FORMATURAS / II CERFloRO 2026
+
+Meu workspace oficial é:
+G:\Meu Drive\IDEs_Agents_26\Sites_Todos_meus_sites_crm_chatbot_clientes_organizadores_parceiros\-Sites_Todos_meus_sites_WK_Codex-dell-g3
+
+Você é o integrador técnico e único writer da NOVA super landing page Prime Formaturas para o II CERFloRO. O pacote que vou disponibilizar é CERFLORO_2026_CODEX_DELL_G3_HANDOFF_COMPLETO_v1_4.zip. Abra o pacote e leia PRIMEIRO:
+00_INICIAR_AQUI_CODEX_DELL_G3_CERFLORO_v1_4.md
+01_PLANO_DIRETOR_IMPLEMENTACAO_PRIME_CERFLORO_v1_4.md
+04_HANDOFF_CRM_API_CERFLORO_v1_4.md
+CERFLORO_2026_BRIEFING_PLANO_DIRETOR_MULTIAGENTES_v1_3.md
+E os anexos de schema/agenda, matriz 21st, checklist e fontes.
+
+Reconcile a versão mais recente do Plano Global Prime (`02_GLOBAL_PRIME.md`, seção 26 e aditivos), os handoffs MugiwaraFest v11/v12 e XCM WP3697, e o runtime WordPress/CRM REAL. Leia as fontes e identifique arquivos/branches antes de criar arquivos. Não use um ACK histórico como prova de publicação atual; compare conteúdo vivo, hash e screenshot. Não toque nas páginas Mugiwara/XCM existentes e nunca sobrescreva seus geradores originais.
+
+Mergir ADITIVAMENTE todas as funcionalidades boas: carrosséis, movimento, áudio, equipes, social, FAQ, link de compra, grupos por pessoa, galeria, vídeos, prévias e organização. A nova marca de superfície é PRIME FORMATURAS (não Mugiwara nem XCM). Construir hero com MEU VÍDEO AUTORAL DE DRONE DA UNIR, aguardando caminho real do arquivo; se não encontrado, preview identificado, sem inventar mídia. Linha do tempo institucional 2024/2026 com acervo real e validação separada do evento acadêmico que fotografei em Rolim em 2025/2026.
+
+CADA DOCENTE TEM SEU PRÓPRIO CARROSSEL DOCUMENTÁRIO, com nome, instituição, cargo, biografia fundamentada, fotos, slides fotografados retificados e ampliáveis, e EXATAMENTE 3 FRASES MARCANTES LITERAIS DELE/DELA, cada uma com áudio original, timestamp, slide relacionado quando houver, aprovação editorial. NÃO são apenas três do congresso inteiro. Perguntas do auditório: autoapresentação extraída dos áudios + foto candidata de quem segurou microfone + checagem humana; não inventar pessoa, voz, cargo nem biografia dos alunos.
+
+Busque componentes e motion do 21st.dev via CLI/MCP oficial, compare opções e confira licença. Como o stack provável da Prime é WordPress, não cole React bruto no Gutenberg. Use plugin/tema isolado + assets compilados ou ilha React somente onde justificar; privilegie CSS leve. Faça scroll storytelling, galeria, FAQ e microanimações acessíveis, áudio pausável e música dedicada licenciada com ducking durante a voz. Respeite reduced-motion/mobile/Safari.
+
+CRM GLOBAL RAKABIA: reutilizar adaptadores/contratos já existentes; Prime C10 piloto staging, produção desativada no último registro; C16 chatbot distinto, C15 esportivo NÃO reaproveitar à força. Nunca compartilhar token entre site/tenant/finalidade. Leads só com opt-in e consentimento; não transmitir biometria/RAW/voz privada ao CRM. Se chatbot/RAG indisponível, FAQ e site funcionam independentemente. Nunca ativar integração de produção sem gates de segurança, E2E e meu OK.
+
+Comece pela FASE P0: inventário read-only, matriz Mugiwara vs XCM vs Prime, fontes vivas, nomes/links de repositórios, disponibilidade do vídeo/drone/slides/áudios, bugs, direitos e riscos. Crie novo branch/worktree e produza `99_ACK/ACK_000_INVENTARIO_PRE_IMPLEMENTACAO.md`, depois avance local/staging módulo a módulo e guarde testes/prints/hashes/rollback. Sem publicar automaticamente, sem apagar mídias, sem segredos em logs, sem fingir testes. Não interrompa o projeto porque a mídia ainda não foi organizada: avance com código/esquema e placeholders claramente marcados, mantendo publicação bloqueada para conteúdo não verificado. Ao final, retorne links de preview real, arquivos, scripts de build, testes, lacunas, próximos passos e comprovantes.
