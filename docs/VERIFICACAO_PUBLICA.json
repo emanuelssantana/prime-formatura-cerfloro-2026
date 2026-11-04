@@ -1,7 +1,7 @@
 {
-  "observedAt": "2026-11-04T02:41:19.200Z",
+  "observedAt": "2026-11-04T02:50:17.704Z",
   "publicUrl": "https://primeformatura.com.br/fotos/ii-cerfloro-2026/",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "htmlHasDocsModule": true,
   "htmlHasPreviewLabel": false,
   "files": [
@@ -18,9 +18,9 @@
       "file": "audio-manager.js",
       "siteStatus": 200,
       "githubStatus": 200,
-      "localSha256": "1499bf1cd5e3074ab3df01a452b75553bd62adb15927c966f135a8829c966167",
-      "siteSha256": "1499bf1cd5e3074ab3df01a452b75553bd62adb15927c966f135a8829c966167",
-      "githubSha256": "1499bf1cd5e3074ab3df01a452b75553bd62adb15927c966f135a8829c966167",
+      "localSha256": "6dcbfdca16cc98cfd45d101fe9179eb745dbde9cf40f1fb53c5d3eecf8ab9ee4",
+      "siteSha256": "6dcbfdca16cc98cfd45d101fe9179eb745dbde9cf40f1fb53c5d3eecf8ab9ee4",
+      "githubSha256": "6dcbfdca16cc98cfd45d101fe9179eb745dbde9cf40f1fb53c5d3eecf8ab9ee4",
       "allMatch": true
     },
     {
@@ -36,9 +36,9 @@
       "file": "event.html",
       "siteStatus": 200,
       "githubStatus": 200,
-      "localSha256": "383537e5c12e827f37e5fe112b2f9a3beb79191a527da2b71d9170e8ab3b647d",
-      "siteSha256": "383537e5c12e827f37e5fe112b2f9a3beb79191a527da2b71d9170e8ab3b647d",
-      "githubSha256": "383537e5c12e827f37e5fe112b2f9a3beb79191a527da2b71d9170e8ab3b647d",
+      "localSha256": "94634b452d5a768cb49e6f0400d599bbc5c0db6376e8cddb3ead0d2d6865bc7e",
+      "siteSha256": "94634b452d5a768cb49e6f0400d599bbc5c0db6376e8cddb3ead0d2d6865bc7e",
+      "githubSha256": "94634b452d5a768cb49e6f0400d599bbc5c0db6376e8cddb3ead0d2d6865bc7e",
       "allMatch": true
     },
     {
@@ -60,8 +60,17 @@
       "allMatch": true
     },
     {
+      "file": "mf-music-legacy.js",
+      "siteStatus": 200,
+      "githubStatus": 200,
+      "localSha256": "adbb100f382cdb9377a71043da07e75a199301389457e27e03899d41d5c72e48",
+      "siteSha256": "adbb100f382cdb9377a71043da07e75a199301389457e27e03899d41d5c72e48",
+      "githubSha256": "adbb100f382cdb9377a71043da07e75a199301389457e27e03899d41d5c72e48",
+      "allMatch": true
+    },
+    {
       "file": "prime-memoria-eventos.php",
-      "sourceSha256": "4abedaf7a3dc534d35c3fda7c6e547ca41f231d1d389e13d7159610c5b60fe40",
+      "sourceSha256": "930896178bdc6eb3ee0d3854032cdf2b1a2ef5008d693b0933149b327b884331",
       "originVerification": "authenticated SFTP hash and PHP lint; public PHP source not requested"
     },
     {
@@ -77,9 +86,9 @@
       "file": "v14-app.js",
       "siteStatus": 200,
       "githubStatus": 200,
-      "localSha256": "742ca33c43b42a9ba86bc051c307791bdf308604fe6b86325e7be5bded3996e6",
-      "siteSha256": "742ca33c43b42a9ba86bc051c307791bdf308604fe6b86325e7be5bded3996e6",
-      "githubSha256": "742ca33c43b42a9ba86bc051c307791bdf308604fe6b86325e7be5bded3996e6",
+      "localSha256": "a4306c9d69a47160d9fae73967f7d50cd7cb40f1c4998781d3f79f84fc463edd",
+      "siteSha256": "a4306c9d69a47160d9fae73967f7d50cd7cb40f1c4998781d3f79f84fc463edd",
+      "githubSha256": "a4306c9d69a47160d9fae73967f7d50cd7cb40f1c4998781d3f79f84fc463edd",
       "allMatch": true
     },
     {
