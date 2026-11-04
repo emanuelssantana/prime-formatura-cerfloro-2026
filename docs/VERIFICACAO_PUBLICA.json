@@ -1,7 +1,7 @@
 {
-  "observedAt": "2026-11-04T02:50:17.704Z",
+  "observedAt": "2026-11-04T03:21:45.812Z",
   "publicUrl": "https://primeformatura.com.br/fotos/ii-cerfloro-2026/",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "htmlHasDocsModule": true,
   "htmlHasPreviewLabel": false,
   "files": [
@@ -36,9 +36,9 @@
       "file": "event.html",
       "siteStatus": 200,
       "githubStatus": 200,
-      "localSha256": "94634b452d5a768cb49e6f0400d599bbc5c0db6376e8cddb3ead0d2d6865bc7e",
-      "siteSha256": "94634b452d5a768cb49e6f0400d599bbc5c0db6376e8cddb3ead0d2d6865bc7e",
-      "githubSha256": "94634b452d5a768cb49e6f0400d599bbc5c0db6376e8cddb3ead0d2d6865bc7e",
+      "localSha256": "3671e82ab0677b9d59185a7d3549e64441415de5a464f8bea748be9da68aaacd",
+      "siteSha256": "3671e82ab0677b9d59185a7d3549e64441415de5a464f8bea748be9da68aaacd",
+      "githubSha256": "3671e82ab0677b9d59185a7d3549e64441415de5a464f8bea748be9da68aaacd",
       "allMatch": true
     },
     {
@@ -69,26 +69,35 @@
       "allMatch": true
     },
     {
+      "file": "prime-logo.webp",
+      "siteStatus": 200,
+      "githubStatus": 200,
+      "localSha256": "a95f8f07aed71f712a73fc9db6e45ed510a353466c89fc7315a6183fd8856134",
+      "siteSha256": "a95f8f07aed71f712a73fc9db6e45ed510a353466c89fc7315a6183fd8856134",
+      "githubSha256": "a95f8f07aed71f712a73fc9db6e45ed510a353466c89fc7315a6183fd8856134",
+      "allMatch": true
+    },
+    {
       "file": "prime-memoria-eventos.php",
-      "sourceSha256": "930896178bdc6eb3ee0d3854032cdf2b1a2ef5008d693b0933149b327b884331",
+      "sourceSha256": "17f7158fa6ee1c4f30d3324ea7d062027e6385cfcd50d32f965207547ff491a2",
       "originVerification": "authenticated SFTP hash and PHP lint; public PHP source not requested"
     },
     {
       "file": "style.css",
       "siteStatus": 200,
       "githubStatus": 200,
-      "localSha256": "6e427f659e060383b3d2f187374ffed3e0f0a4572556178dcc366b13b74bb158",
-      "siteSha256": "6e427f659e060383b3d2f187374ffed3e0f0a4572556178dcc366b13b74bb158",
-      "githubSha256": "6e427f659e060383b3d2f187374ffed3e0f0a4572556178dcc366b13b74bb158",
+      "localSha256": "a86e2361d6b606f940b5fe9bfef152d80cf3de6a95efc027ea8d058580dc00ce",
+      "siteSha256": "a86e2361d6b606f940b5fe9bfef152d80cf3de6a95efc027ea8d058580dc00ce",
+      "githubSha256": "a86e2361d6b606f940b5fe9bfef152d80cf3de6a95efc027ea8d058580dc00ce",
       "allMatch": true
     },
     {
       "file": "v14-app.js",
       "siteStatus": 200,
       "githubStatus": 200,
-      "localSha256": "a4306c9d69a47160d9fae73967f7d50cd7cb40f1c4998781d3f79f84fc463edd",
-      "siteSha256": "a4306c9d69a47160d9fae73967f7d50cd7cb40f1c4998781d3f79f84fc463edd",
-      "githubSha256": "a4306c9d69a47160d9fae73967f7d50cd7cb40f1c4998781d3f79f84fc463edd",
+      "localSha256": "4089228cee6e86c497345798b7b776d09b96414912665822901f3ba1f0586c65",
+      "siteSha256": "4089228cee6e86c497345798b7b776d09b96414912665822901f3ba1f0586c65",
+      "githubSha256": "4089228cee6e86c497345798b7b776d09b96414912665822901f3ba1f0586c65",
       "allMatch": true
     },
     {
