@@ -1,0 +1,132 @@
+{
+  "sourceSHA256": "534233b745f6cd38e6434dfa38b562e29edbb8650ec60f474a9851c517600826",
+  "speakers": [
+    "Marcelo Lucian Ferronato",
+    "Thiago de Paula Protásio",
+    "Elaine Cristina Lengowski",
+    "Paulo Ricardo Gherardi Hein",
+    "Jaqueline Harmatiuk",
+    "Jair Figueiredo do Carmo",
+    "Dany Roberta Marques Caldeira",
+    "Luiz Carlos Slompo",
+    "Afonso Henrique Rodrigues de Oliveira Barros",
+    "Tatiane Rodrigues Lima",
+    "Alvaro Patrik Corteze Soares",
+    "Fernanda Oliveira de Almeida",
+    "Maria do Rozário Almeida da Silva"
+  ],
+  "sessions": [
+    {
+      "title": "Recepção, credenciamento e café de boas-vindas",
+      "day": "2026-11-03",
+      "time": "08:00–10:00",
+      "source": "https://www.even3.com.br/iicerfloro-760904/",
+      "activity": "official_program"
+    },
+    {
+      "title": "Solenidade de abertura do II CERFloRO",
+      "day": "2026-11-03",
+      "time": "10:00–10:30",
+      "source": "https://www.even3.com.br/iicerfloro-760904/",
+      "activity": "official_program"
+    },
+    {
+      "title": "Palestra 1 - Potencial de projetos de recuperação ambiental como ferramenta de mitigação das mudanças climáticas em Rondônia",
+      "day": "2026-11-03",
+      "time": "10:30–12:00",
+      "source": "https://www.even3.com.br/iicerfloro-760904/",
+      "activity": "official_program"
+    },
+    {
+      "title": "Palestra 2 - Aproveitamento de resíduos florestais para geração de energia",
+      "day": "2026-11-03",
+      "time": "14:00–15:00",
+      "source": "https://www.even3.com.br/iicerfloro-760904/",
+      "activity": "official_program"
+    },
+    {
+      "title": "Palestra 3 - Nanotecnologia aplicada às cadeias produtivas florestais de Rondônia",
+      "day": "2026-11-03",
+      "time": "15:00–16:00",
+      "source": "https://www.even3.com.br/iicerfloro-760904/",
+      "activity": "official_program"
+    },
+    {
+      "title": "Coffee break + Apresentação de posteres 1",
+      "day": "2026-11-03",
+      "time": "16:00–17:00",
+      "source": "https://www.even3.com.br/iicerfloro-760904/",
+      "activity": "official_program"
+    },
+    {
+      "title": "Palestra 4 - Potencial de uso de técnicas não destrutivas para avaliação de madeiras amazônicas",
+      "day": "2026-11-03",
+      "time": "17:00–18:00",
+      "source": "https://www.even3.com.br/iicerfloro-760904/",
+      "activity": "official_program"
+    },
+    {
+      "title": "Palestra 5 - Atuação dos profissionais da Engenharia Florestal no manejo e tecnologia de produtos florestais em Rondônia",
+      "day": "2026-11-04",
+      "time": "08:00–08:40",
+      "source": "https://www.even3.com.br/iicerfloro-760904/",
+      "activity": "official_program"
+    },
+    {
+      "title": "Palestra 6 - Vitrine tecnológica para estudos de espécies agroflorestais",
+      "day": "2026-11-04",
+      "time": "08:40–09:30",
+      "source": "https://www.even3.com.br/iicerfloro-760904/",
+      "activity": "official_program"
+    },
+    {
+      "title": "Coffee break + Apresentação de posteres 2",
+      "day": "2026-11-04",
+      "time": "09:30–10:30",
+      "source": "https://www.even3.com.br/iicerfloro-760904/",
+      "activity": "official_program"
+    },
+    {
+      "title": "Palestra 7 - Plantios de espécies exóticas para usos da madeira em Rondônia",
+      "day": "2026-11-04",
+      "time": "10:30–11:20",
+      "source": "https://www.even3.com.br/iicerfloro-760904/",
+      "activity": "official_program"
+    },
+    {
+      "title": "Palestra 8 - Manejo da cultura do Pinus para resinagem em Rondônia",
+      "day": "2026-11-04",
+      "time": "11:20–12:20",
+      "source": "https://www.even3.com.br/iicerfloro-760904/",
+      "activity": "official_program"
+    },
+    {
+      "title": "Palestra 9 - Desafios da fiscalização florestal em Rondônia",
+      "day": "2026-11-04",
+      "time": "14:00–15:00",
+      "source": "https://www.even3.com.br/iicerfloro-760904/",
+      "activity": "official_program"
+    },
+    {
+      "title": "Coffee break + Apresentação de posteres 3",
+      "day": "2026-11-04",
+      "time": "15:30–16:30",
+      "source": "https://www.even3.com.br/iicerfloro-760904/",
+      "activity": "official_program"
+    },
+    {
+      "title": "Mesa-Redonda - Gestão de Florestas Públicas em Rondônia",
+      "day": "2026-11-04",
+      "time": "16:00–17:30",
+      "source": "https://www.even3.com.br/iicerfloro-760904/",
+      "activity": "official_program"
+    },
+    {
+      "title": "Encerramento do Evento",
+      "day": "2026-11-04",
+      "time": "17:30–18:00",
+      "source": "https://www.even3.com.br/iicerfloro-760904/",
+      "activity": "official_program"
+    }
+  ]
+}
