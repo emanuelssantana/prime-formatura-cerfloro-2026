@@ -37,3 +37,162 @@
 .pm-shell.reduce-motion .pm-deck-card,.pm-shell.reduce-motion .pm-hero-copy h1,.pm-shell.reduce-motion .pm-event-logo-v2{animation:none;transition:none}@media(prefers-reduced-motion:reduce){.pm-deck-card,.pm-hero-copy h1,.pm-event-logo-v2{animation:none;transition:none}}
 
 .pm-portrait-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:24px}.pm-portrait-card{padding:16px;border:1px solid #b4c79288;border-radius:20px;background:#173e2c}.pm-portrait-card img{width:100%;aspect-ratio:4/5;object-fit:contain;background:#10291f;border-radius:12px}.pm-portrait-card button{min-height:44px;padding:10px 18px;border-radius:24px;border:1px solid #dbea9d;background:transparent;color:inherit;cursor:pointer}
+
+/* Deck XCM original, escopo exclusivo CERFloRO. */
+#pm-hero-carousel .hero-deck-stage {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  transform-style: preserve-3d;
+}
+#pm-hero-carousel .hero-3d-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 270px;
+  height: 380px;
+  margin-top: -190px;
+  margin-left: -135px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+  transition: transform 0.65s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.65s ease, box-shadow 0.65s ease, border-color 0.65s ease;
+  cursor: pointer;
+  background: #0d1222;
+}
+#pm-hero-carousel .hero-3d-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  user-select: none;
+}
+#pm-hero-carousel .hero-card-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(9, 11, 24, 0.85);
+  backdrop-filter: blur(6px);
+  color: #ff9d00;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 157, 0, 0.4);
+}
+
+/* 3D Positions for the 12 Cards */
+#pm-hero-carousel .hero-3d-card.pos-0 {
+  transform: translate3d(0, 0, 140px) scale(1.08) rotate(0deg);
+  opacity: 1;
+  z-index: 25;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.85), 0 0 35px rgba(255, 95, 31, 0.5);
+  border: 2px solid #ff9d00;
+}
+#pm-hero-carousel .hero-3d-card.pos-1 {
+  transform: translate3d(75px, 10px, 70px) scale(0.96) rotate(6deg);
+  opacity: 0.9;
+  z-index: 20;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+#pm-hero-carousel .hero-3d-card.pos-2 {
+  transform: translate3d(140px, 20px, 10px) scale(0.86) rotate(11deg);
+  opacity: 0.7;
+  z-index: 15;
+}
+#pm-hero-carousel .hero-3d-card.pos-3 {
+  transform: translate3d(180px, 30px, -40px) scale(0.78) rotate(15deg);
+  opacity: 0.4;
+  z-index: 10;
+}
+#pm-hero-carousel .hero-3d-card.pos-11 {
+  transform: translate3d(-75px, 10px, 70px) scale(0.96) rotate(-6deg);
+  opacity: 0.9;
+  z-index: 20;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+#pm-hero-carousel .hero-3d-card.pos-10 {
+  transform: translate3d(-140px, 20px, 10px) scale(0.86) rotate(-11deg);
+  opacity: 0.7;
+  z-index: 15;
+}
+#pm-hero-carousel .hero-3d-card.pos-9 {
+  transform: translate3d(-180px, 30px, -40px) scale(0.78) rotate(-15deg);
+  opacity: 0.4;
+  z-index: 10;
+}
+/* Fila de fundo invisivel */
+#pm-hero-carousel .hero-3d-card.pos-4, #pm-hero-carousel .hero-3d-card.pos-5, #pm-hero-carousel .hero-3d-card.pos-6, #pm-hero-carousel .hero-3d-card.pos-7, #pm-hero-carousel .hero-3d-card.pos-8 {
+  transform: translate3d(0, 40px, -120px) scale(0.7);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Deck Controls & Dots */
+#pm-hero-carousel .hero-deck-ctrls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 10px;
+  z-index: 30;
+}
+#pm-hero-carousel .hero-deck-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 157, 0, 0.4);
+  color: #fff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#pm-hero-carousel .hero-deck-btn:hover {
+  background: #ff5f1f;
+  border-color: #ff5f1f;
+  transform: scale(1.1);
+}
+#pm-hero-carousel .hero-deck-dots {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+#pm-hero-carousel .hero-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+#pm-hero-carousel .hero-dot.active {
+  width: 22px;
+  border-radius: 10px;
+  background: #ff9d00;
+  box-shadow: 0 0 10px rgba(255, 157, 0, 0.7);
+}
+
+
+@property --mfa{syntax:"<angle>";inherits:false;initial-value:0deg}
+/* moldura animada dos cards */
+.pm-shell .mf-car{position:relative}
+.pm-shell .mf-car::before{content:"";position:absolute;inset:-4px;border-radius:20px;z-index:0;pointer-events:none;background:conic-gradient(from var(--mfa),#ffd284,#ff6fb5,#78eee7,#ceb1ff,#ffd284);opacity:.9}
+.pm-shell .mf-car.mfx-live::before{animation:mfxSpinA 6s linear infinite}
+.pm-shell .mf-car .mf-frame{position:relative;z-index:1}
+@keyframes mfxSpinA{to{--mfa:360deg}}
+
+#pm-hero-carousel{perspective:1200px}
+#pm-hero-carousel .hero-deck-stage{overflow:visible}
+#pm-hero-carousel .hero-3d-card{right:auto;bottom:auto;padding:0}
+#pm-hero-carousel .pm-art-card img{object-fit:contain}
+#pm-hero-carousel .hero-dot{padding:0;min-width:0;min-height:0;border:0}
+#pm-hero-carousel .hero-deck-btn{padding:0;min-height:38px}
+.pm-shell .mf-frame{display:block;background:#0d1222;border-radius:16px;padding:16px;height:100%}
+.pm-shell .pm-team article.mf-car{padding:0}
+@media(max-width:600px){#pm-hero-carousel .hero-3d-card{width:180px;height:250px;margin:-125px 0 0 -90px}#pm-hero-carousel .hero-deck-stage{height:300px}}
+@media(prefers-reduced-motion:reduce){.pm-shell .mf-car.mfx-live::before{animation:none}#pm-hero-carousel .hero-3d-card{transition:none}}
+.pm-shell.reduce-motion .mf-car.mfx-live::before{animation:none}
