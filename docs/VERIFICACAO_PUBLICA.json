@@ -1,7 +1,7 @@
 {
-  "observedAt": "2026-11-04T01:17:55.962Z",
+  "observedAt": "2026-11-04T02:31:42.996Z",
   "publicUrl": "https://primeformatura.com.br/fotos/ii-cerfloro-2026/",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "htmlHasDocsModule": true,
   "htmlHasPreviewLabel": false,
   "files": [
@@ -36,10 +36,10 @@
       "file": "event.html",
       "siteStatus": 200,
       "githubStatus": 200,
-      "localSha256": "945dc45ca83a795ee2c737195012294fcbc0a4f47543fed6816b42a9e4547f9c",
-      "siteSha256": "945dc45ca83a795ee2c737195012294fcbc0a4f47543fed6816b42a9e4547f9c",
-      "githubSha256": "945dc45ca83a795ee2c737195012294fcbc0a4f47543fed6816b42a9e4547f9c",
-      "allMatch": true
+      "localSha256": "eaaa6b9e4ae8889d3810727da35f2ebe1d4112a4e1c1141bb79ac3728c57e825",
+      "siteSha256": "eaaa6b9e4ae8889d3810727da35f2ebe1d4112a4e1c1141bb79ac3728c57e825",
+      "githubSha256": "d32113eff914b4cc15c9e2cea671903b68908265178b7e2a3beac846e6ffaa0a",
+      "allMatch": false
     },
     {
       "file": "event.json",
@@ -61,16 +61,16 @@
     },
     {
       "file": "prime-memoria-eventos.php",
-      "sourceSha256": "3bdec17b1d226bd87a9c72234d0003e2727215cff3ea60cefc49d3ddee6ad059",
+      "sourceSha256": "9b6c0ba9fce071d3e48c4dbd889dabcb9b57ecd8a194b436a049dd16141d1082",
       "originVerification": "authenticated SFTP hash and PHP lint; public PHP source not requested"
     },
     {
       "file": "style.css",
       "siteStatus": 200,
       "githubStatus": 200,
-      "localSha256": "fab4f650370a889c8b267aca0ca486bd77a30060a9720cb098e7ae6f6b647b53",
-      "siteSha256": "fab4f650370a889c8b267aca0ca486bd77a30060a9720cb098e7ae6f6b647b53",
-      "githubSha256": "fab4f650370a889c8b267aca0ca486bd77a30060a9720cb098e7ae6f6b647b53",
+      "localSha256": "0850b1ed940d1d5388e3b9f3f45422a7bceb7002736ccbb74ca0330a80051835",
+      "siteSha256": "0850b1ed940d1d5388e3b9f3f45422a7bceb7002736ccbb74ca0330a80051835",
+      "githubSha256": "0850b1ed940d1d5388e3b9f3f45422a7bceb7002736ccbb74ca0330a80051835",
       "allMatch": true
     },
     {
