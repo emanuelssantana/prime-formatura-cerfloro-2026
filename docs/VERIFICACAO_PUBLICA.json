@@ -1,7 +1,7 @@
 {
-  "observedAt": "2026-11-04T03:36:29.910Z",
+  "observedAt": "2026-11-04T04:09:06.716Z",
   "publicUrl": "https://primeformatura.com.br/fotos/ii-cerfloro-2026/",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "htmlHasDocsModule": true,
   "htmlHasPreviewLabel": false,
   "files": [
@@ -33,6 +33,24 @@
       "allMatch": true
     },
     {
+      "file": "cerfloro-logo-horizontal-v2.png",
+      "siteStatus": 200,
+      "githubStatus": 200,
+      "localSha256": "1b2ad42f0e4e0ad12ea25be966520ffa19cae69603591fb7680c1716cebe181c",
+      "siteSha256": "1b2ad42f0e4e0ad12ea25be966520ffa19cae69603591fb7680c1716cebe181c",
+      "githubSha256": "1b2ad42f0e4e0ad12ea25be966520ffa19cae69603591fb7680c1716cebe181c",
+      "allMatch": true
+    },
+    {
+      "file": "cerfloro-logo-vertical-v2.png",
+      "siteStatus": 200,
+      "githubStatus": 200,
+      "localSha256": "47f2ad75d27da7d5785a19457646d287c3329fb01cbd4f92e3a62b98dd34f5ea",
+      "siteSha256": "47f2ad75d27da7d5785a19457646d287c3329fb01cbd4f92e3a62b98dd34f5ea",
+      "githubSha256": "47f2ad75d27da7d5785a19457646d287c3329fb01cbd4f92e3a62b98dd34f5ea",
+      "allMatch": true
+    },
+    {
       "file": "cerfloro-logo.png",
       "siteStatus": 200,
       "githubStatus": 200,
@@ -45,9 +63,9 @@
       "file": "event.html",
       "siteStatus": 200,
       "githubStatus": 200,
-      "localSha256": "2630397d34bc41b082022097aa30c779781a547a76754bc65525aa12c007e468",
-      "siteSha256": "2630397d34bc41b082022097aa30c779781a547a76754bc65525aa12c007e468",
-      "githubSha256": "2630397d34bc41b082022097aa30c779781a547a76754bc65525aa12c007e468",
+      "localSha256": "25fcf36d447891455aaafcb6d5672ab5acdae7df6db79b4f1127264dbc136d47",
+      "siteSha256": "25fcf36d447891455aaafcb6d5672ab5acdae7df6db79b4f1127264dbc136d47",
+      "githubSha256": "25fcf36d447891455aaafcb6d5672ab5acdae7df6db79b4f1127264dbc136d47",
       "allMatch": true
     },
     {
@@ -88,16 +106,16 @@
     },
     {
       "file": "prime-memoria-eventos.php",
-      "sourceSha256": "b18b4be46b65009f6b6551e9a17e69dffbea1013ff730e15a856ec4bc8102040",
+      "sourceSha256": "e6630a23458c8ab0b5d8a9d179e4b4f3cb91b3648632831a3dab7994210617d3",
       "originVerification": "authenticated SFTP hash and PHP lint; public PHP source not requested"
     },
     {
       "file": "style.css",
       "siteStatus": 200,
       "githubStatus": 200,
-      "localSha256": "bed920b0cdcd2122daccfd759be6987af96c28ff440eb597f5a2f706b42e3e3b",
-      "siteSha256": "bed920b0cdcd2122daccfd759be6987af96c28ff440eb597f5a2f706b42e3e3b",
-      "githubSha256": "bed920b0cdcd2122daccfd759be6987af96c28ff440eb597f5a2f706b42e3e3b",
+      "localSha256": "7487794bd05b8dad4d0394b4b11fc75ad396bc776e986f6a842513fe63017fe7",
+      "siteSha256": "7487794bd05b8dad4d0394b4b11fc75ad396bc776e986f6a842513fe63017fe7",
+      "githubSha256": "7487794bd05b8dad4d0394b4b11fc75ad396bc776e986f6a842513fe63017fe7",
       "allMatch": true
     },
     {
