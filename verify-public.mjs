@@ -5,7 +5,7 @@ for(const name of fs.readdirSync(folder)){
  const local=fs.readFileSync(new URL(name,folder));
  // PHP executes on origin; verify its upload via authenticated deployment receipt, never download source.
  if(name.endsWith('.php')){rows.push({file:name,sourceSha256:digest(local),originVerification:'authenticated SFTP hash and PHP lint; public PHP source not requested'});continue}
- const site=await fetch('https://primeformatura.com.br/wp-content/plugins/prime-memoria-eventos/'+name+'?release=012',{cache:'no-store'});
+ const site=await fetch('https://primeformatura.com.br/wp-content/plugins/prime-memoria-eventos/'+name+'?release=013',{cache:'no-store'});
  const live=Buffer.from(await site.arrayBuffer());
  const gh=await fetch('https://raw.githubusercontent.com/emanuelssantana/prime-formatura-cerfloro-2026/main/plugin/prime-memoria-eventos/'+name);
  const remote=Buffer.from(await gh.arrayBuffer());
