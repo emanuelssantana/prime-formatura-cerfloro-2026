@@ -16,3 +16,5 @@
 #pm-tutorial{max-width:min(620px,92vw);max-height:85vh;overflow:auto;padding:2rem;background:#f5f1e7;color:#173e2c;border:1px solid #54725a;border-radius:18px}#pm-tutorial li{margin-block:.8rem}#pm-tutorial-close{float:right;min-height:44px;min-width:44px}#pm-tutorial::backdrop{background:#00190dc9}
 @media(max-width:700px){.pm-legacy-banner{grid-template-columns:1fr}.pm-panorama{height:300px}.pm-panorama>div{inset:12% 15%;padding:1rem}}
 .pm-shell.reduce-motion .pm-logo-motion *,.pm-shell.reduce-motion .pm-panorama>div{animation:none!important}@media(prefers-reduced-motion:reduce){.pm-logo-motion *,.pm-panorama>div{animation:none!important}}
+
+.pm-event-logo{background:#fffdf5;border-radius:14px;padding:1rem;margin-bottom:1.5rem;width:min(100%,720px)}.pm-event-logo img{display:block;width:100%;height:auto}
