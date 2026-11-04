@@ -8,6 +8,10 @@
 
 WordPress: páginas 2436 e 2437. Plugin: `plugin/prime-memoria-eventos`. Marca Prime Formatura; fotógrafo Emanuel Santana, graduando do último período de Engenharia Florestal. Datas do evento informadas pelo proprietário: 3 e 4/11/2026. Entrega gratuita anunciada; provedor final ainda em definição. Fotos, drone e gravações ainda não recebidos neste corte.
 
+## Release vigente 0.1.2
+
+Correções da auditoria v1.6: manifesto público sanitizado, AudioManager por docente, testes do módulo servido, CI Node/PHP/Chromium/WebKit e incrementos editoriais. Veja [o delta](docs/DELTA_012_VIDEO_E_AUDITORIA.md), [o pipeline editorial](docs/EDITORIAL_PRIVADO_E_PUBLICO.md) e [a execução CI](https://github.com/emanuelssantana/prime-formatura-cerfloro-2026/actions/runs/41752798601). Prints reais desta release em docs/imagens/wordpress-012-*.png. Mídias do congresso ainda não recebidas.
+
 ## Como avaliar sem confundir código com entrega
 A página funciona diretamente no WordPress. Código Git é fonte versionada e permite revisão; execução local e testes não substituem navegação no domínio. Evidência de publicação da release fica em docs/ESTADO_E_CONTINUIDADE.md. Os textos de briefing preservam instruções antigas: a orientação mais recente do proprietário é avançar diretamente no WordPress, com backup/rollback e validação pública. Não reconstruir sites fonte ou alterar o CRM por esta instrução.
 
@@ -16,7 +20,7 @@ A página funciona diretamente no WordPress. Código Git é fonte versionada e p
 |---|---|
 | plugin/prime-memoria-eventos/prime-memoria-eventos.php | Shortcodes, assets condicionais e CollectionPage JSON-LD |
 | event.html / central.html | Conteúdo HTML progressivo, sem JS colado no Gutenberg |
-| event.json | Manifesto de mídia, entrega, docentes e sessões |
+| event.public.json | Projeção sanitizada de conteúdo aprovado; fonte editorial fica privada |
 | style.css | Layout, responsive e alternativas sem movimento |
 | app.js | Filtros por dia, fotos ampliáveis, entrega e FAQ nativo |
 | v14-app.js | Docentes, slides, voz, música/ducking, drone e timeline |
@@ -43,3 +47,4 @@ Autor da implementação: Codex Dell G3, a pedido de Emanuel Santana, 03/11/2026
 
 ## Revisão com o ChatGPT
 Abra [o roteiro de auditoria](docs/PARA_CHATGPT.md). A comprovação dos arquivos que o WordPress está servindo está em [VERIFICACAO_PUBLICA.json](docs/VERIFICACAO_PUBLICA.json). Há imagens de referência com ambiente e versão identificados em docs/imagens.
+

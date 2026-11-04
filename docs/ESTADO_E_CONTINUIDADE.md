@@ -28,3 +28,8 @@ Neste módulo CRM permanece desligado. A presença de outros conectores Prime no
 ## Reversão
 Backup privado antes de cada versão; restaurar somente arquivos deste plugin e limpar o cache correspondente. Não reverter páginas ou plugins de outras equipes. Nova publicação não inclui migração de banco. Segredos e backups sensíveis ficam fora do GitHub público.
 
+
+## Atualização 0.1.2 — 03/11/2026 ~21h18 Manaus
+A versão atual foi aplicada ao WordPress com backup e verificação pública. Sanitizador gera event.public.json somente com campos permitidos/aprovados; event.json é alias igualmente sanitizado. Fonte editorial privada não é versionada/publicada. AudioManager impede cruzamento entre docentes e repõe estados. Os 12 testes locais importam os módulos do plugin servido. O workflow GitHub run41752798601 passou unit/PHP e browser Chromium/WebKit contra WordPress. Capturas de produção em docs/imagens/wordpress-012-*; não confundir com imagens anteriores.
+
+Limites: testes de áudio com objetos simulados; sem voz/música/drone real do congresso ou Safari físico. Deck de destaque só aparece quando houver fotos reais aprovadas. Agenda oficial 2026 não foi verificada diretamente: anexo permanece fonte candidata; nenhum docente/nome/horário inventado. Prioridade mídia e merge visual completo continua. Veja DELTA_012_VIDEO_E_AUDITORIA.md.
