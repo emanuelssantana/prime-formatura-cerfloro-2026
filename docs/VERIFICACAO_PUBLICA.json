@@ -1,7 +1,7 @@
 {
-  "observedAt": "2026-11-04T04:09:06.716Z",
+  "observedAt": "2026-11-04T05:11:14.628Z",
   "publicUrl": "https://primeformatura.com.br/fotos/ii-cerfloro-2026/",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "htmlHasDocsModule": true,
   "htmlHasPreviewLabel": false,
   "files": [
@@ -106,25 +106,25 @@
     },
     {
       "file": "prime-memoria-eventos.php",
-      "sourceSha256": "e6630a23458c8ab0b5d8a9d179e4b4f3cb91b3648632831a3dab7994210617d3",
+      "sourceSha256": "5b0808777c79aae6ea650afa65a0697401b1c696e30461d8290c9c5c127b6143",
       "originVerification": "authenticated SFTP hash and PHP lint; public PHP source not requested"
     },
     {
       "file": "style.css",
       "siteStatus": 200,
       "githubStatus": 200,
-      "localSha256": "7487794bd05b8dad4d0394b4b11fc75ad396bc776e986f6a842513fe63017fe7",
-      "siteSha256": "7487794bd05b8dad4d0394b4b11fc75ad396bc776e986f6a842513fe63017fe7",
-      "githubSha256": "7487794bd05b8dad4d0394b4b11fc75ad396bc776e986f6a842513fe63017fe7",
+      "localSha256": "5571634205c5a6166fbcd2a81cf2738e5cc850d58af3c8ff8ff75dbc520458f3",
+      "siteSha256": "5571634205c5a6166fbcd2a81cf2738e5cc850d58af3c8ff8ff75dbc520458f3",
+      "githubSha256": "5571634205c5a6166fbcd2a81cf2738e5cc850d58af3c8ff8ff75dbc520458f3",
       "allMatch": true
     },
     {
       "file": "v14-app.js",
       "siteStatus": 200,
       "githubStatus": 200,
-      "localSha256": "4089228cee6e86c497345798b7b776d09b96414912665822901f3ba1f0586c65",
-      "siteSha256": "4089228cee6e86c497345798b7b776d09b96414912665822901f3ba1f0586c65",
-      "githubSha256": "4089228cee6e86c497345798b7b776d09b96414912665822901f3ba1f0586c65",
+      "localSha256": "115ca5f5c2f551192332dd8eda2c00e1108e44756a8f358658ada339e46a9b75",
+      "siteSha256": "115ca5f5c2f551192332dd8eda2c00e1108e44756a8f358658ada339e46a9b75",
+      "githubSha256": "115ca5f5c2f551192332dd8eda2c00e1108e44756a8f358658ada339e46a9b75",
       "allMatch": true
     },
     {
