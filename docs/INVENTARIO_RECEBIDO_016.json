@@ -1,0 +1,104 @@
+{
+  "observedUTC": "2026-11-04T05:11:00.302610+00:00",
+  "counts": {
+    "Palestrantes_e_autoridades": 174,
+    "Dia1_gerais": 114,
+    "dia1_slides": 68
+  },
+  "srtCount": 18,
+  "srt": [
+    {
+      "file": "20261103_103921 Part 1.srt",
+      "sha256": "5c46ad98744f9dbbf718e90990faabc9e48c5b06dbfc5ae2d1ddb05b58c84a8a",
+      "cues": 434
+    },
+    {
+      "file": "20261103_103921 Part 2.srt",
+      "sha256": "062160021ab319fe3781bdd7f7d13dabd246a1231fe114d3e0ea8bd97285cef4",
+      "cues": 411
+    },
+    {
+      "file": "20261103_103921 Part 3.srt",
+      "sha256": "cf7a0009710e02a7dc300526aa3fb85e4ed8d532215526ce091c10adbe2d07f6",
+      "cues": 198
+    },
+    {
+      "file": "20261103_103921 Part 4.srt",
+      "sha256": "4d31a559cc79a364cc15afe3e9978aa4ee64b609347be3db4d3622707102ee2c",
+      "cues": 34
+    },
+    {
+      "file": "Default_20261103-144207.srt",
+      "sha256": "0565e44b5bba1ed368a048947009fa83b44a72efb5247330cc8b954863a8e38e",
+      "cues": 69
+    },
+    {
+      "file": "Default_20261103-144722.srt",
+      "sha256": "2efa5e5fb66eca454548aa0048091b4ae488276d9ad517a8bcdda28f7d791078",
+      "cues": 101
+    },
+    {
+      "file": "Default_20261103-145529.srt",
+      "sha256": "80bb45bc2d96a8517432d777ed20a21ff0aa769da9caeb4e2857365f2c6701d7",
+      "cues": 1048
+    },
+    {
+      "file": "Default_20261103-154500.srt",
+      "sha256": "3969ab47395b835c619f094c7dbcee84c6c9b79e723f51f3ce9cc7ff59071c48",
+      "cues": 279
+    },
+    {
+      "file": "Default_20261103-160351.srt",
+      "sha256": "6244a33ee44527a1f4c5b751fed828edbf5f8434ad4e566039e4d8206b2fd5bf",
+      "cues": 25
+    },
+    {
+      "file": "Default_20261103-160855.srt",
+      "sha256": "0e6e9a76fb0d1027d80e31dbbf6b2ec89d60e1e83cb7f445eb5f7a0ab7983f6e",
+      "cues": 320
+    },
+    {
+      "file": "Default_20261103-163005.srt",
+      "sha256": "0dcbc43cea2e6bf67edccc9e4925f79272ccf6f2caf7bc3d9a79c36d924a8f98",
+      "cues": 444
+    },
+    {
+      "file": "Default_20261103-172513.srt",
+      "sha256": "a7987c4a32cd9295936bb053f0a9fddbaffc85a1792df74e381d83f34e405640",
+      "cues": 65
+    },
+    {
+      "file": "Default_20261103-173013.srt",
+      "sha256": "57bf0f3ff0a1a2398988561b6cf4f4c1603f48e1723d8ba7458ae4b116e57b42",
+      "cues": 119
+    },
+    {
+      "file": "Default_20261103-173932.srt",
+      "sha256": "f40d4dab2bec0f56b33af2c32ac17eb76e29548566d64330c0b607b0a63509bb",
+      "cues": 63
+    },
+    {
+      "file": "Default_20261103-174507.srt",
+      "sha256": "617892f1c2eb4cb38334dc1e70f3bd3fd0444a9161ded081cae06b0c63677d0f",
+      "cues": 12
+    },
+    {
+      "file": "Default_20261103-181141.srt",
+      "sha256": "3f15bb8fdf327104b6de6c57eb603be5c34732c2fb050354e957942a72413359",
+      "cues": 286
+    },
+    {
+      "file": "Default_20261103-183007.srt",
+      "sha256": "7ea307f9fab6e2f3194a19b777023e807a5dbad82c198e99acd82fc036fca2c3",
+      "cues": 667
+    },
+    {
+      "file": "Default_20261103-190315.srt",
+      "sha256": "30aa3f32096cf34772ff0571a768de2a2f73050bb59910d4dd1ab99d6d78167d",
+      "cues": 49
+    }
+  ],
+  "iphoneFiles": [
+    "LOGO_CONGRESSO_FLORESTAL-NOV-26_v2-3.png"
+  ]
+}
