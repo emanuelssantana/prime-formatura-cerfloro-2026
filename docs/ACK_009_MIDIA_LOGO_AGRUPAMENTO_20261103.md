@@ -11,3 +11,6 @@ Legado auditado: rostos.py YuNet/SFace; agrupar.py ligação média,cannot-link 
 Piloto real privado:30 fotos estáveis,38 detecções,8 grupos CANDIDATOS. Modelos XCM reutilizados localmente. Sem nomes, papéis ou vínculo com voz. Folha C:/lcjob/cerfloro-ingest/REVISAR_PILOTO.jpg. Revisão detectou falso positivo C002 (mãos/corpo), C007 parcial e possível fragmentação C001/C008. Erros registrados em REVISAO_PILOTO.json; não declarar8 pessoas confirmadas nem agrupamento final. Fotos e embeddings privados não enviados a GitHub,WordPress ou APIs externas. SRT/áudios atuais aguardados; não atribuir nome por reconhecimento facial. Originais preservados.
 
 Próximas ações Codex: eliminar falsos positivos dos candidatos, revisar fragmentações, expandir lotes estáveis com IDs persistentes, produzir seleção revisada e preparar galeria. Ainda não publicada a galeria de fotos deste lote. Logo publicado; QA browser atual em apuração no momento de criação deste recibo.
+
+
+QA final: CI41768075350 SUCCESS —14 testes unitários, PHP/JS e navegador WordPress público desktop/WebKit. https://github.com/emanuelssantana/prime-formatura-cerfloro-2026/actions/runs/41768075350 . Isso não valida agrupamento biométrico nem identidades; piloto continua privado e em revisão.
