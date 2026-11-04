@@ -2,6 +2,7 @@ import{test,expect}from'@playwright/test';
 test('WordPress live filters, FAQ, motion and public manifest',async({page,request},info)=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  const response=await page.goto('/fotos/ii-cerfloro-2026/',{waitUntil:'networkidle'});expect(response.status()).toBe(200);
+ await expect(page.locator('#pm-sound')).toBeDisabled();await expect(page.locator('#pm-sound-status')).toContainText('revisados');
  await expect(page.locator('#pm-timeline')).toContainText('2024');
  await page.locator('[data-day="2026-11-04"]').click();await expect(page.locator('[data-day="2026-11-04"]')).toHaveAttribute('aria-pressed','true');await expect(page.locator('#pm-gallery')).toContainText('segundo dia');
  await page.getByText('As fotos serão gratuitas?',{exact:true}).click();await expect(page.locator('details[open]')).toContainText('gratuita');

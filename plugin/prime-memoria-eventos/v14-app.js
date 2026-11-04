@@ -2,17 +2,17 @@ import {validateManifest,publicUrl} from './v14-core.js';
 import {AudioManager} from './audio-manager.js';
 const audioManager=new AudioManager();
 const root=document.querySelector('.pm-shell');
-let pendingTheme=null,themeRequest=0;
+let pendingTheme=null,selectedTheme=null,themeRequest=0;
 const soundButton=document.querySelector('#pm-sound');
 const soundStatus=document.querySelector('#pm-sound-status');
 function soundState(playing,message){if(soundButton){soundButton.disabled=false;soundButton.setAttribute('aria-pressed',String(playing));soundButton.textContent=playing?'Pausar música':'Ativar som';}if(soundStatus)soundStatus.textContent=message;}
 async function startTheme(s){
  const url=s.music?.rightsConfirmed?publicUrl(s.music.url):null;if(!url)return;
- pendingTheme=s;const request=++themeRequest;const ok=await audioManager.playMusic(s.id,url);if(request!==themeRequest)return;
+ selectedTheme=s;pendingTheme=s;const request=++themeRequest;const ok=await audioManager.playMusic(s.id,url);if(request!==themeRequest)return;if(ok)pendingTheme=null;
  soundState(ok,ok?'Tocando: '+s.name:'Toque em Ativar som para ouvir a trilha.');
  document.querySelectorAll('.pm-speaker').forEach(c=>c.classList.toggle('is-playing',ok&&c.id==='speaker-'+s.id));
 }
-soundButton?.addEventListener('click',()=>{if(audioManager.music&&!audioManager.music.paused){themeRequest++;pendingTheme=null;audioManager.pauseAll();soundState(false,'Música pausada por você.');document.querySelectorAll('.pm-speaker').forEach(c=>c.classList.remove('is-playing'));}else{const s=pendingTheme||manifest?.speakers.find(s=>s.status==='published'&&s.music?.rightsConfirmed&&publicUrl(s.music.url));if(s)startTheme(s);}});
+soundButton?.addEventListener('click',()=>{if(audioManager.music&&!audioManager.music.paused){themeRequest++;pendingTheme=null;audioManager.pauseAll();soundState(false,'Música pausada por você.');document.querySelectorAll('.pm-speaker').forEach(c=>c.classList.remove('is-playing'));}else{const s=pendingTheme||selectedTheme||manifest?.speakers.find(s=>s.status==='published'&&s.music?.rightsConfirmed&&publicUrl(s.music.url));if(s)startTheme(s);}});
 function retryTheme(e){if(!pendingTheme||e.target.closest('button,a,input,select,textarea,summary,dialog'))return;const s=pendingTheme;pendingTheme=null;startTheme(s);}
 document.addEventListener('pointerdown',retryTheme,{passive:true});
 function prepareMusic(d){const first=d.speakers.find(s=>s.status==='published'&&s.music?.rightsConfirmed&&publicUrl(s.music.url));if(first)startTheme(first);}
