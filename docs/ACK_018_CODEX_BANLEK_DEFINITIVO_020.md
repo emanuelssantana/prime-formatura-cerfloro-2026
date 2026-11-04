@@ -9,3 +9,6 @@ Código83a8b02 conecta CTA e tutorial ao endereço final, atualiza textos provis
 15 testes Node passaram. Teste browser de botão Banlek adicionado em9c1d1d0; CI41778410230 em andamento no corte. Deploy via sessão43505 em andamento no corte. Conferir PROD_020.json antes de afirmar publicação. Origem anterior0.1.9 tem backup/hash comprovados.
 
 Pendências de conclusão integral: publicação fotográfica, seleção/revisão de retratos, seções científicas com áudio/slide e3falas por docente, mídia de drone/YouTube não localizada, conferência real da entrega Banlek, CRM consentido se aplicável. Manter objetivo integral ativo; não marcar concluído por só ligar álbum.
+
+## Recibo posterior de publicação
+Deploy0.2.0 concluído; backup /home/u249999030/p08_backups/cerfloro-020-20261104-011801. SFTP/hash/PHP lint/purge concluídos. Manifesto público relido HTTP200 com delivery.url=https://banlek.com/album/2a556b. CI41778410230 ainda em andamento nesta consulta. Quantidade e download dentro da Banlek continuam não comprovados.
