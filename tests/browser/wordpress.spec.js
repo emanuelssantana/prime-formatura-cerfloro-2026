@@ -30,11 +30,11 @@ test('WordPress live filters, FAQ, motion and public manifest',async({page,reque
 test('live entrance deck navigates, pauses and supports keyboard',async({page})=>{
  await page.goto('/fotos/ii-cerfloro-2026/',{waitUntil:'domcontentloaded'});
  const deck=page.locator('#pm-hero-carousel');await expect(deck).toBeVisible();
- const current=()=>deck.locator('.pm-deck-dots [aria-current="true"]');await expect(current()).toHaveText('1');
- await deck.getByRole('button',{name:'Próxima →',exact:true}).click();await expect(current()).toHaveText('2');
- await page.keyboard.press('ArrowRight');await expect(current()).toHaveText('3');
+ const current=()=>deck.locator('.pm-deck-dots [aria-current="true"]');await expect(current()).toHaveAttribute('aria-label','Mostrar cartão 1');
+ await deck.getByRole('button',{name:'Próxima →',exact:true}).click();await expect(current()).toHaveAttribute('aria-label','Mostrar cartão 2');
+ await page.keyboard.press('ArrowRight');await expect(current()).toHaveAttribute('aria-label','Mostrar cartão 3');
  await deck.getByRole('button',{name:'Pausar apresentação',exact:true}).click();await expect(deck.getByRole('button',{name:'Retomar apresentação',exact:true})).toHaveAttribute('aria-pressed','true');
- await deck.getByRole('button',{name:'Mostrar cartão 1',exact:true}).click();await expect(current()).toHaveText('1');
+ await deck.getByRole('button',{name:'Mostrar cartão 1',exact:true}).click();await expect(current()).toHaveAttribute('aria-label','Mostrar cartão 1');
 });
 
 test('final Banlek delivery button opens the supplied album',async({page})=>{
