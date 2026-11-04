@@ -1,7 +1,7 @@
 {
-  "observedAt": "2026-11-04T03:21:45.812Z",
+  "observedAt": "2026-11-04T03:36:29.910Z",
   "publicUrl": "https://primeformatura.com.br/fotos/ii-cerfloro-2026/",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "htmlHasDocsModule": true,
   "htmlHasPreviewLabel": false,
   "files": [
@@ -33,12 +33,21 @@
       "allMatch": true
     },
     {
+      "file": "cerfloro-logo.png",
+      "siteStatus": 200,
+      "githubStatus": 200,
+      "localSha256": "cb29d45b6e1ab217fd3fd3b4cb787850af1d98848f177c994b32c60ed2e9b17e",
+      "siteSha256": "cb29d45b6e1ab217fd3fd3b4cb787850af1d98848f177c994b32c60ed2e9b17e",
+      "githubSha256": "cb29d45b6e1ab217fd3fd3b4cb787850af1d98848f177c994b32c60ed2e9b17e",
+      "allMatch": true
+    },
+    {
       "file": "event.html",
       "siteStatus": 200,
       "githubStatus": 200,
-      "localSha256": "3671e82ab0677b9d59185a7d3549e64441415de5a464f8bea748be9da68aaacd",
-      "siteSha256": "3671e82ab0677b9d59185a7d3549e64441415de5a464f8bea748be9da68aaacd",
-      "githubSha256": "3671e82ab0677b9d59185a7d3549e64441415de5a464f8bea748be9da68aaacd",
+      "localSha256": "2630397d34bc41b082022097aa30c779781a547a76754bc65525aa12c007e468",
+      "siteSha256": "2630397d34bc41b082022097aa30c779781a547a76754bc65525aa12c007e468",
+      "githubSha256": "2630397d34bc41b082022097aa30c779781a547a76754bc65525aa12c007e468",
       "allMatch": true
     },
     {
@@ -79,16 +88,16 @@
     },
     {
       "file": "prime-memoria-eventos.php",
-      "sourceSha256": "17f7158fa6ee1c4f30d3324ea7d062027e6385cfcd50d32f965207547ff491a2",
+      "sourceSha256": "b18b4be46b65009f6b6551e9a17e69dffbea1013ff730e15a856ec4bc8102040",
       "originVerification": "authenticated SFTP hash and PHP lint; public PHP source not requested"
     },
     {
       "file": "style.css",
       "siteStatus": 200,
       "githubStatus": 200,
-      "localSha256": "a86e2361d6b606f940b5fe9bfef152d80cf3de6a95efc027ea8d058580dc00ce",
-      "siteSha256": "a86e2361d6b606f940b5fe9bfef152d80cf3de6a95efc027ea8d058580dc00ce",
-      "githubSha256": "a86e2361d6b606f940b5fe9bfef152d80cf3de6a95efc027ea8d058580dc00ce",
+      "localSha256": "bed920b0cdcd2122daccfd759be6987af96c28ff440eb597f5a2f706b42e3e3b",
+      "siteSha256": "bed920b0cdcd2122daccfd759be6987af96c28ff440eb597f5a2f706b42e3e3b",
+      "githubSha256": "bed920b0cdcd2122daccfd759be6987af96c28ff440eb597f5a2f706b42e3e3b",
       "allMatch": true
     },
     {
