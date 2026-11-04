@@ -11,3 +11,6 @@ Versão0.2.1 implementa16 sessões com título/data/horário previsto e fonte. H
 Commit00656e7; teste browser21739d0 exige16artigos,16links e ressalva de horário previsto. 15 testes Node passaram. Deploy na sessão34453 em andamento neste corte; conferir PROD_021.json. CI41779761764 em andamento. Não declarar publicado antes de recibo.
 
 Fotos/áudios ainda não publicados;27retratos selecionados privadamente,0identidades confirmadas na seleção. Rejeição anterior de publicação fotográfica segue sem causa específica esclarecida. Próximo executor Codex: concluir prova da021, conferir nomes contra apresentação falada e retomar galeria.
+
+## Confirmação posterior
+Deploy0.2.1 concluído com hashes/PHP/purge, backup /home/u249999030/p08_backups/cerfloro-021-20261104-013122. Manifesto público HTTP200 relido:16sessões e linkBanlek correto. CI41779761764 success, incluindo teste das16atividades no WordPress.
