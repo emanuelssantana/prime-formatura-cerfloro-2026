@@ -1,4 +1,5 @@
-import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';
+import {execFileSync} from 'node:child_process';import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';
+const revision=execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim();
 const digest=b=>crypto.createHash('sha256').update(b).digest('hex');
 const folder=new URL('./plugin/prime-memoria-eventos/',import.meta.url);const rows=[];
 for(const name of fs.readdirSync(folder)){
@@ -7,7 +8,7 @@ for(const name of fs.readdirSync(folder)){
  if(name.endsWith('.php')){rows.push({file:name,sourceSha256:digest(local),originVerification:'authenticated SFTP hash and PHP lint; public PHP source not requested'});continue}
  const site=await fetch('https://primeformatura.com.br/wp-content/plugins/prime-memoria-eventos/'+name+'?release=013',{cache:'no-store'});
  const live=Buffer.from(await site.arrayBuffer());
- const gh=await fetch('https://raw.githubusercontent.com/emanuelssantana/prime-formatura-cerfloro-2026/main/plugin/prime-memoria-eventos/'+name);
+ const gh=await fetch('https://raw.githubusercontent.com/emanuelssantana/prime-formatura-cerfloro-2026/'+revision+'/plugin/prime-memoria-eventos/'+name);
  const remote=Buffer.from(await gh.arrayBuffer());
  rows.push({file:name,siteStatus:site.status,githubStatus:gh.status,localSha256:digest(local),siteSha256:digest(live),githubSha256:digest(remote),allMatch:digest(local)===digest(live)&&digest(local)===digest(remote)});
 }
