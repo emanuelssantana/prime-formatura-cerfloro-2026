@@ -13,7 +13,7 @@ const soundButton=document.querySelector('#pm-sound');
 const soundStatus=document.querySelector('#pm-sound-status');
 function soundState(playing,message){if(soundButton){soundButton.disabled=false;soundButton.setAttribute('aria-pressed',String(playing));soundButton.textContent=playing?'Pausar música':'Ativar som';}if(soundStatus)soundStatus.textContent=message;}
 async function startTheme(s){
- if(legacyMusic){audioManager.stopVoice();legacyMusic.selectTrack(Math.max(0,manifest.speakers.indexOf(s))%xcmTracks.length);legacyMusic.play();return;}
+ if(legacyMusic){const index=xcmTracks.findIndex(t=>t.video===s.musicTrackId);if(index<0||s.musicTrackReviewed!==true||s.musicTrackRightsConfirmed!==true)return;audioManager.stopVoice();legacyMusic.selectTrack(index);legacyMusic.play();return;}
  const url=s.music?.rightsConfirmed?publicUrl(s.music.url):null;if(!url)return;
  selectedTheme=s;pendingTheme=s;const request=++themeRequest;const ok=await audioManager.playMusic(s.id,url);if(request!==themeRequest)return;if(ok)pendingTheme=null;
  soundState(ok,ok?'Tocando: '+s.name:'Toque em Ativar som para ouvir a trilha.');

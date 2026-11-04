@@ -6,11 +6,11 @@
 - Central: https://primeformatura.com.br/fotos/
 - Evento: https://primeformatura.com.br/fotos/ii-cerfloro-2026/
 
-WordPress: páginas 2436 e 2437. Plugin: `plugin/prime-memoria-eventos`. Marca Prime Formatura; fotógrafo Emanuel Santana, graduando do último período de Engenharia Florestal. Datas do evento informadas pelo proprietário: 3 e 4/11/2026. Entrega gratuita anunciada; provedor final ainda em definição. Fotos, drone e gravações ainda não recebidos neste corte.
+WordPress: páginas 2436 e 2437. Plugin: `plugin/prime-memoria-eventos`. Marca Prime Formatura; fotógrafo Emanuel Santana, graduando do último período de Engenharia Florestal. Datas do evento informadas pelo proprietário: 3 e 4/11/2026. Entrega gratuita anunciada; provedor final ainda em definição. 174 JPGs recebidos; edição atual em reconciliação privada. Drone e gravações continuam pendentes.
 
-## Release vigente 0.1.2
+## Release publicada 0.1.8
 
-Correções da auditoria v1.6: manifesto público sanitizado, AudioManager por docente, testes do módulo servido, CI Node/PHP/Chromium/WebKit e incrementos editoriais. Veja [o delta](docs/DELTA_012_VIDEO_E_AUDITORIA.md), [o pipeline editorial](docs/EDITORIAL_PRIVADO_E_PUBLICO.md) e [a execução CI](https://github.com/emanuelssantana/prime-formatura-cerfloro-2026/actions/runs/41752798601). Prints reais desta release em docs/imagens/wordpress-012-*.png. Mídias do congresso ainda não recebidas.
+Logos responsivos v2 publicados no WordPress, commit `9716dfb`, CI [41771303401](https://github.com/emanuelssantana/prime-formatura-cerfloro-2026/actions/runs/41771303401) concluída com sucesso. A galeria pública permanece vazia. As correções ACK014 posteriores são código preparado, sem novo deploy declarado. Consulte docs/ACK_012_CODEX_PARA_GPT_LOGOS_E_FOTOS_20261104.md. As evidências anteriores permanecem preservadas.
 
 ## Como avaliar sem confundir código com entrega
 A página funciona diretamente no WordPress. Código Git é fonte versionada e permite revisão; execução local e testes não substituem navegação no domínio. Evidência de publicação da release fica em docs/ESTADO_E_CONTINUIDADE.md. Os textos de briefing preservam instruções antigas: a orientação mais recente do proprietário é avançar diretamente no WordPress, com backup/rollback e validação pública. Não reconstruir sites fonte ou alterar o CRM por esta instrução.

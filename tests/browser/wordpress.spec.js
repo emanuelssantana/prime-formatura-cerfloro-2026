@@ -15,3 +15,14 @@ test('WordPress live filters, FAQ, motion and public manifest',async({page,reque
  const data=await(await request.get('/wp-content/plugins/prime-memoria-eventos/event.public.json')).json();expect(data.speakers.every(x=>x.status==='published')).toBeTruthy();expect(data.media.every(x=>x.status==='published')).toBeTruthy();expect(JSON.stringify(data)).not.toMatch(/privatePath|rawAudio|embedding|internalToken/);
  expect(errors).toEqual([]);await page.screenshot({path:info.outputPath('wordpress.png'),fullPage:true});
 });
+
+ test('responsive logo boundary on live WordPress',async({page})=>{
+ await page.goto('/fotos/ii-cerfloro-2026/',{waitUntil:'domcontentloaded'});
+ for(const width of [320,375,390,599,600,601,768,1024,1440]){
+ await page.setViewportSize({width,height:900});
+ const logo=page.locator('.pm-event-logo-v2 img');
+ await expect.poll(()=>logo.evaluate(i=>i.currentSrc)).toContain(width<=600?'cerfloro-logo-vertical-v2.png':'cerfloro-logo-horizontal-v2.png');
+ await expect.poll(()=>logo.evaluate(i=>i.complete&&i.naturalWidth>0)).toBeTruthy();
+ expect(await logo.evaluate(i=>getComputedStyle(i).objectFit)).toBe('contain');
+ }
+ });
