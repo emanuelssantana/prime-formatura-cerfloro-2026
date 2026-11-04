@@ -196,3 +196,36 @@
 @media(max-width:600px){#pm-hero-carousel .hero-3d-card{width:180px;height:250px;margin:-125px 0 0 -90px}#pm-hero-carousel .hero-deck-stage{height:300px}}
 @media(prefers-reduced-motion:reduce){.pm-shell .mf-car.mfx-live::before{animation:none}#pm-hero-carousel .hero-3d-card{transition:none}}
 .pm-shell.reduce-motion .mf-car.mfx-live::before{animation:none}
+
+/* Original shared Mugiwara/XCM design tokens and component declarations. */
+.pm-shell{--ink:#f5f2ff;--night:#090b18;margin:0;background:var(--night);color:var(--ink);font:18px/1.65 system-ui,sans-serif}
+.pm-shell h1{font-size:clamp(2.6rem,5.4vw,5rem);line-height:1.06;letter-spacing:.025em;margin:22px 0}
+.pm-shell h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.13}
+.pm-shell .pm-eyebrow{text-transform:uppercase;letter-spacing:.14em;color:#78eee7;font-size:.8rem;font-weight:800}
+.pm-shell .pm-hero{background:radial-gradient(ellipse at 85% 30%,#412561,transparent 65%)}
+.pm-shell .pm-button{display:inline-flex;gap:20px;align-items:center;justify-content:center;position:relative;padding:18px 25px;margin:20px 0;border-radius:14px;text-decoration:none;color:#090b18;font-weight:850;min-height:56px;max-width:100%;text-align:center}
+.pm-shell .pm-button{background:linear-gradient(115deg,#ffc652,#fff0ae,#f89c3c);background-size:250% 100%;animation:mfGold 5s ease infinite}
+.pm-shell #pm-album{background:#6eece1;box-shadow:0 0 0 2px #6eece133;animation:mfPulse 3s ease infinite}
+.pm-shell #pm-tutorial-open{background:#ceb1ff;border-radius:3px 22px 3px 22px}
+.pm-shell #pm-share-page{background:#ff9d93;border-bottom:6px solid #b95459;transition:transform .2s}
+.pm-shell #pm-share-page:hover{transform:translateY(-4px)}
+.pm-shell .pm-share{background:linear-gradient(135deg,#172137,#2a172c)}
+.pm-shell #perguntas{padding:64px max(6vw,20px);background:#0b0e1f}
+.pm-shell .pm-experience article, .pm-shell .pm-portrait-card, .pm-shell .pm-team .mf-frame{padding:28px;border:1px solid #595b80;background:linear-gradient(145deg,#242941,#17192b);border-radius:24px}
+@keyframes mfGold{50%{background-position:100% 0}}
+@keyframes mfPulse{50%{box-shadow:0 0 0 9px #6eece10a}}
+@keyframes mfArrow{50%{transform:translate(4px,-3px)}}
+
+.pm-shell {--bg:#090b18;--ink:#f5f2ff;--muted:#b9bfd5;--accent:#ffd284}
+.pm-shell h1,.pm-shell h2,.pm-shell h3{font-family:system-ui,sans-serif}
+.pm-shell .pm-nav,.pm-shell .pm-footer,.pm-shell .pm-chapter-nav{background:#111529;color:#f5f2ff}
+.pm-shell .pm-section:not(.pm-share){background-color:#14182b;color:#f5f2ff}
+.pm-shell .pm-section h2,.pm-shell .pm-section h3,.pm-shell .pm-section p:not(.pm-eyebrow){color:#f5f2ff}
+.pm-shell .pm-section h2 em,.pm-shell .pm-hero h1 em{color:#ffd284}
+.pm-shell .pm-section .pm-button,.pm-shell .pm-hero .pm-button{color:#090b18}
+.pm-shell .pm-section .pm-link{color:#78eee7}
+.pm-shell .pm-section details,.pm-shell .pm-empty,.pm-shell .pm-free-period,.pm-shell .pm-panorama>div{background:#17192b;color:#f5f2ff;border-color:#595b80}
+.pm-shell .pm-panorama>div{border-color:#e0b960}
+.pm-shell .pm-event-logo-v2{background:transparent}
+.pm-shell.reduce-motion *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.pm-shell .pm-button{animation:none}}

@@ -49,3 +49,11 @@ test('official schedule exposes all sourced activities and planned time',async({
  await expect(page.locator('#pm-sessions')).toContainText('Horário previsto na programação oficial');
  await expect(page.locator('#pm-sessions article a')).toHaveCount(16);
 });
+
+test('XCM deck and Mugiwara frames on the public congress page', async ({page}) => {
+  await page.goto('/fotos/ii-cerfloro-2026/', {waitUntil:'domcontentloaded'});
+  await expect(page.locator('.hero-3d-card.pos-0')).toHaveCSS('border-top-color', 'rgb(255, 157, 0)');
+  await expect(page.locator('.pm-shell')).toHaveCSS('background-color', 'rgb(9, 11, 24)');
+  await expect(page.locator('.pm-team .mfx-live .mf-frame')).toHaveCount(2);
+  await expect(page.locator('#pm-tutorial-open')).toHaveCSS('background-color','rgb(206, 177, 255)');
+});
