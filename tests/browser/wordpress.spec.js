@@ -36,3 +36,9 @@ test('live entrance deck navigates, pauses and supports keyboard',async({page})=
  await deck.getByRole('button',{name:'Pausar apresentação',exact:true}).click();await expect(deck.getByRole('button',{name:'Retomar apresentação',exact:true})).toHaveAttribute('aria-pressed','true');
  await deck.getByRole('button',{name:'Mostrar cartão 1',exact:true}).click();await expect(current()).toHaveText('1');
 });
+
+test('final Banlek delivery button opens the supplied album',async({page})=>{
+ await page.goto('/fotos/ii-cerfloro-2026/',{waitUntil:'domcontentloaded'});
+ const album=page.locator('#pm-album');await expect(album).toBeVisible();await expect(album).toHaveAttribute('href','https://banlek.com/album/2a556b');await expect(album).toHaveAttribute('rel','noopener');
+ await page.locator('#pm-tutorial-open').click();await expect(page.locator('#pm-tutorial a')).toHaveAttribute('href','https://banlek.com/album/2a556b');
+});
