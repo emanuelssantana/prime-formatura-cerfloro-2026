@@ -1,0 +1,80 @@
+{
+  "source": "https://www.even3.com.br/iicerfloro-760904/",
+  "status": "ASSOCIACOES_DOCUMENTAIS_NAO_IDENTIFICACAO_DE_VOZ",
+  "activities": [
+    {
+      "title": "Palestra 1 - Potencial de projetos de recuperação ambiental como ferramenta de mitigação das mudanças climáticas em Rondônia",
+      "day": "2026-11-03",
+      "speakers": [
+        "Marcelo Lucian Ferronato"
+      ]
+    },
+    {
+      "title": "Palestra 2 - Aproveitamento de resíduos florestais para geração de energia",
+      "day": "2026-11-03",
+      "speakers": [
+        "Thiago de Paula Protásio"
+      ]
+    },
+    {
+      "title": "Palestra 3 - Nanotecnologia aplicada às cadeias produtivas florestais de Rondônia",
+      "day": "2026-11-03",
+      "speakers": [
+        "Elaine Cristina Lengowski"
+      ]
+    },
+    {
+      "title": "Palestra 4 - Potencial de uso de técnicas não destrutivas para avaliação de madeiras amazônicas",
+      "day": "2026-11-03",
+      "speakers": [
+        "Paulo Ricardo Gherardi Hein"
+      ]
+    },
+    {
+      "title": "Palestra 5 - Atuação dos profissionais da Engenharia Florestal no manejo e tecnologia de produtos florestais em Rondônia",
+      "day": "2026-11-04",
+      "speakers": [
+        "Jaqueline Harmatiuk"
+      ]
+    },
+    {
+      "title": "Palestra 6 - Vitrine tecnológica para estudos de espécies agroflorestais",
+      "day": "2026-11-04",
+      "speakers": [
+        "Jair Figueiredo do Carmo"
+      ]
+    },
+    {
+      "title": "Palestra 7 - Plantios de espécies exóticas para usos da madeira em Rondônia",
+      "day": "2026-11-04",
+      "speakers": [
+        "Dany Roberta Marques Caldeira"
+      ]
+    },
+    {
+      "title": "Palestra 8 - Manejo da cultura do Pinus para resinagem em Rondônia",
+      "day": "2026-11-04",
+      "speakers": [
+        "Luiz Carlos Slompo"
+      ]
+    },
+    {
+      "title": "Palestra 9 - Desafios da fiscalização florestal em Rondônia",
+      "day": "2026-11-04",
+      "speakers": [
+        "Afonso Henrique Rodrigues de Oliveira Barros"
+      ]
+    },
+    {
+      "title": "Mesa-Redonda - Gestão de Florestas Públicas em Rondônia",
+      "day": "2026-11-04",
+      "speakers": [
+        "Tatiane Rodrigues Lima",
+        "Alvaro Patrik Corteze Soares",
+        "Fernanda Oliveira de Almeida",
+        "Maria do Rozário Almeida da Silva"
+      ]
+    }
+  ],
+  "warning": "Programacao prevista; sequencia das gravacoes fornecidas pode divergir. Sem associar pessoas por rosto."
+}
