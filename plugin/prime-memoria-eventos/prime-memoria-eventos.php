@@ -2,16 +2,16 @@
 /**
  * Plugin Name: Prime â€” MemÃ³ria de Eventos
  * Description: Central fotogrÃ¡fica e memÃ³ria acadÃªmica CERFloRO, independente do CRM.
- * Version: 0.2.3
+ * Version: 0.2.4
  * Author: Emanuel Santana / Codex Dell G3
  */
 defined('ABSPATH') || exit;
 add_action('wp_enqueue_scripts',function(){
  if(!is_singular('page'))return;
  $p=get_post(); if(!$p||(!has_shortcode($p->post_content,'prime_fotos_central')&&!has_shortcode($p->post_content,'prime_cerfloro')))return;
- wp_enqueue_style('prime-memory',plugins_url('style.css',__FILE__),[], '0.2.3');
- wp_enqueue_script('prime-memory',plugins_url('app.js',__FILE__),[], '0.2.3',true);
- if(has_shortcode($p->post_content,'prime_cerfloro')){wp_enqueue_script('prime-legacy-music',plugins_url('mf-music-legacy.js',__FILE__),[], '0.2.3',true);wp_enqueue_script('prime-memory-docs',plugins_url('v14-app.js',__FILE__),['prime-legacy-music'], '0.2.3',true);}
+ wp_enqueue_style('prime-memory',plugins_url('style.css',__FILE__),[], '0.2.4');
+ wp_enqueue_script('prime-memory',plugins_url('app.js',__FILE__),[], '0.2.4',true);
+ if(has_shortcode($p->post_content,'prime_cerfloro')){wp_enqueue_script('prime-legacy-music',plugins_url('mf-music-legacy.js',__FILE__),[], '0.2.4',true);wp_enqueue_script('prime-memory-docs',plugins_url('v14-app.js',__FILE__),['prime-legacy-music'], '0.2.4',true);}
  wp_add_inline_script('prime-memory','window.PRIME_MEMORY_BASE='.wp_json_encode(plugin_dir_url(__FILE__)).';','before');
  wp_add_inline_style('prime-memory','body:has(.pm-shell) #primary{margin:0;width:100%} body:has(.pm-shell) .ast-container{max-width:none;padding:0} body:has(.pm-shell) .entry-header,body:has(.pm-shell) #masthead,body:has(.pm-shell) #colophon{display:none} body:has(.pm-shell) .site-main > article{padding:0} body:has(.pm-shell) .entry-content{margin:0}');
 });

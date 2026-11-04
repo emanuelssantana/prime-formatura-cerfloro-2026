@@ -229,3 +229,5 @@
 .pm-shell .pm-event-logo-v2{background:transparent}
 .pm-shell.reduce-motion *{animation-play-state:paused!important}
 @media(prefers-reduced-motion:reduce){.pm-shell .pm-button{animation:none}}
+
+.pm-film-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:24px}.pm-film-grid article{background:linear-gradient(145deg,#242941,#17192b);border:1px solid #595b80;border-radius:20px;padding:16px}.pm-film-grid video{display:block;width:100%;height:clamp(240px,45vh,440px);background:#090b18;object-fit:contain}.pm-film-grid h3{font-size:1.2rem;margin-bottom:12px}
