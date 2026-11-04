@@ -6,7 +6,7 @@ test('WordPress live filters, FAQ, motion and public manifest',async({page,reque
  await expect(page.locator('#pm-sound')).toBeDisabled();await expect(page.locator('#pm-sound-status')).toContainText('revisados');
  await expect(page.locator('#pm-timeline')).toContainText('2024');
  await page.locator('[data-day="2026-11-04"]').click();await expect(page.locator('[data-day="2026-11-04"]')).toHaveAttribute('aria-pressed','true');await expect(page.locator('#pm-gallery')).toContainText('segundo dia');
- await page.getByText('As fotos serão gratuitas?',{exact:true}).click();await expect(page.locator('details[open]')).toContainText('gratuita');
+ await page.getByText('As fotos serÃ£o gratuitas?',{exact:true}).click();await expect(page.locator('details[open]')).toContainText('gratuita');
  await expect(page.locator('.pm-free-period')).toContainText('03 a 17 de novembro de 2026');await expect(page.locator('#equipe article')).toHaveCount(2);for(const image of await page.locator('#equipe img').all()){await image.scrollIntoViewIfNeeded();await expect.poll(()=>image.evaluate(i=>i.complete&&i.naturalWidth>0)).toBeTruthy();}
  const eventLogo=page.locator('.pm-event-logo-v2 img');await eventLogo.scrollIntoViewIfNeeded();await expect.poll(()=>eventLogo.evaluate(i=>i.complete&&i.naturalWidth>0)).toBeTruthy();expect(await eventLogo.evaluate(i=>i.currentSrc)).toContain(info.project.name==='webkit-mobile'?'cerfloro-logo-vertical-v2.png':'cerfloro-logo-horizontal-v2.png');
  await expect(page.locator('.pm-logo-motion img')).toBeVisible();await page.locator('#pm-tutorial-open').click();await expect(page.locator('#pm-tutorial')).toBeVisible();await page.keyboard.press('Escape');await expect(page.locator('#pm-tutorial')).not.toBeVisible();await expect(page.locator('#pm-tutorial-open')).toBeFocused();
@@ -26,3 +26,13 @@ test('WordPress live filters, FAQ, motion and public manifest',async({page,reque
  expect(await logo.evaluate(i=>getComputedStyle(i).objectFit)).toBe('contain');
  }
  });
+
+test('live entrance deck navigates, pauses and supports keyboard',async({page})=>{
+ await page.goto('/fotos/ii-cerfloro-2026/',{waitUntil:'domcontentloaded'});
+ const deck=page.locator('#pm-hero-carousel');await expect(deck).toBeVisible();
+ const current=()=>deck.locator('.pm-deck-dots [aria-current="true"]');await expect(current()).toHaveText('1');
+ await deck.getByRole('button',{name:'Próxima →',exact:true}).click();await expect(current()).toHaveText('2');
+ await page.keyboard.press('ArrowRight');await expect(current()).toHaveText('3');
+ await deck.getByRole('button',{name:'Pausar apresentação',exact:true}).click();await expect(deck.getByRole('button',{name:'Retomar apresentação',exact:true})).toHaveAttribute('aria-pressed','true');
+ await deck.getByRole('button',{name:'Mostrar cartão 1',exact:true}).click();await expect(current()).toHaveText('1');
+});

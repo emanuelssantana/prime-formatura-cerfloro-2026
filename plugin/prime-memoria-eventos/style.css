@@ -20,3 +20,18 @@
 .pm-event-logo{background:#fffdf5;border-radius:14px;padding:1rem;margin-bottom:1.5rem;width:min(100%,720px)}.pm-event-logo img{display:block;width:100%;height:auto}
 
 .pm-event-logo-v2{background:transparent;padding:0;width:100%;max-width:720px}.pm-event-logo-v2 picture{display:block;aspect-ratio:3/2}.pm-event-logo-v2 img{width:100%;height:100%;object-fit:contain;display:block}@media(max-width:600px){.pm-event-logo-v2{max-width:340px;margin-inline:auto}.pm-event-logo-v2 picture{aspect-ratio:1/1}}
+
+/* CERFloRO entrance 019: eight deck compositions with reversible motion. */
+.pm-deck{overflow:hidden;padding:18px 0}.pm-deck-card{inset:18px 17%;transform:translateX(calc(var(--offset)*100px)) translateZ(calc(var(--distance)*-80px)) rotateY(calc(var(--offset)*-15deg)) scale(calc(1 - var(--distance)*.15));transition:transform .7s ease,opacity .7s ease;box-shadow:0 18px 45px #0006}
+.pm-art-card{background:linear-gradient(145deg,#f6f2e5,#dfe8d0);display:flex;flex-direction:column;justify-content:center}.pm-art-card img{height:75%;object-fit:contain;padding:12px}.pm-deck-caption{display:block;padding:10px;font:600 14px/1.4 system-ui;color:#173e2c}.pm-deck-dots [aria-current=true]{background:#dbea9d;color:#173e2c}.pm-deck-controls button:focus-visible{outline:3px solid #dbea9d;outline-offset:4px}
+#pm-hero-carousel[data-transition="1"] .pm-deck-card{transform:translateX(calc(var(--offset)*80px)) rotate(calc(var(--offset)*8deg)) scale(calc(1 - var(--distance)*.12))}
+#pm-hero-carousel[data-transition="2"] .pm-deck-card{transform:translateX(calc(var(--offset)*95px)) translateY(calc(var(--distance)*20px)) scale(calc(1 - var(--distance)*.15))}
+#pm-hero-carousel[data-transition="3"] .pm-deck-card{transform:translateX(calc(var(--offset)*80px)) rotateY(calc(var(--offset)*25deg)) translateZ(calc(var(--distance)*-100px))}
+#pm-hero-carousel[data-transition="4"] .pm-deck-card{transform:translateX(calc(var(--offset)*100px)) rotate(calc(var(--offset)*-7deg)) scale(calc(1 - var(--distance)*.13))}
+#pm-hero-carousel[data-transition="5"] .pm-deck-card{transform:translateX(calc(var(--offset)*70px)) translateY(calc(var(--distance)*-15px)) scale(calc(1 - var(--distance)*.16))}
+#pm-hero-carousel[data-transition="6"] .pm-deck-card{transform:translateX(calc(var(--offset)*105px)) rotateY(calc(var(--offset)*-28deg)) scale(calc(1 - var(--distance)*.10))}
+#pm-hero-carousel[data-transition="7"] .pm-deck-card{transform:translateX(calc(var(--offset)*75px)) rotate(calc(var(--offset)*12deg)) translateY(calc(var(--distance)*12px)) scale(calc(1 - var(--distance)*.13))}
+.pm-hero-copy h1{animation:pmEntrance .9s both}.pm-event-logo-v2{animation:pmEntrance .7s both}@keyframes pmEntrance{from{opacity:0;translate:0 18px}to{opacity:1;translate:0 0}}
+.pm-team article{position:relative;padding:18px;border:1px solid #b4c79288;border-radius:22px;background:linear-gradient(135deg,#244d3c,#173e2c);box-shadow:0 18px 45px #0003}.pm-team article:hover{border-color:#dbea9d}.pm-team article img{transition:transform .5s}.pm-team article:hover img{transform:scale(1.015)}
+@media(max-width:700px){.pm-deck{height:300px}.pm-deck-card{inset:15px 20%}.pm-deck-controls{gap:6px}.pm-deck-caption{font-size:12px}.pm-deck-controls button{padding:8px}.pm-deck-dots{gap:0}}
+.pm-shell.reduce-motion .pm-deck-card,.pm-shell.reduce-motion .pm-hero-copy h1,.pm-shell.reduce-motion .pm-event-logo-v2{animation:none;transition:none}@media(prefers-reduced-motion:reduce){.pm-deck-card,.pm-hero-copy h1,.pm-event-logo-v2{animation:none;transition:none}}
