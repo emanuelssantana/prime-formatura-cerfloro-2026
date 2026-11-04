@@ -1,7 +1,7 @@
 import{test,expect}from'@playwright/test';
 test('WordPress live filters, FAQ, motion and public manifest',async({page,request},info)=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
- const response=await page.goto('/fotos/ii-cerfloro-2026/',{waitUntil:'networkidle'});expect(response.status()).toBe(200);
+ const response=await page.goto('/fotos/ii-cerfloro-2026/',{waitUntil:'domcontentloaded'});expect(response.status()).toBe(200);
  await expect.poll(()=>page.evaluate(()=>window.MFMusic?.state()?.ready)).toBeTruthy();expect(await page.evaluate(()=>window.MFMusic.lists().youtube.length)).toBe(27);await expect(page.locator('#mf-music-panel iframe')).toHaveCount(1);
  await expect(page.locator('#pm-sound')).toBeDisabled();await expect(page.locator('#pm-sound-status')).toContainText('revisados');
  await expect(page.locator('#pm-timeline')).toContainText('2024');
