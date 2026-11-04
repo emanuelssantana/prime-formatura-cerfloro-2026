@@ -57,3 +57,17 @@ test('XCM deck and Mugiwara frames on the public congress page', async ({page}) 
   await expect(page.locator('.pm-team .mfx-live .mf-frame')).toHaveCount(2);
   await expect(page.locator('#pm-tutorial-open')).toHaveCSS('background-color','rgb(206, 177, 255)');
 });
+
+test('congress recordings are reachable from the event entrance', async ({page, request}) => {
+  await page.goto('/fotos/ii-cerfloro-2026/', {waitUntil:'domcontentloaded'});
+  await expect(page.locator('.pm-hero a[href="#videos-do-congresso"]')).toBeVisible();
+  await expect(page.locator('.pm-hero a[href="https://banlek.com/album/2a556b"]')).toBeVisible();
+  const films = page.locator('#videos-do-congresso video[controls]');
+  await expect(films).toHaveCount(8);
+  for (const film of await films.all()) {
+    const url = await film.getAttribute('src');
+    const result = await request.get(url, {headers:{Range:'bytes=0-63'}});
+    expect(result.status()).toBe(206);
+    expect((await result.body()).subarray(4,8).toString()).toBe('ftyp');
+  }
+});
