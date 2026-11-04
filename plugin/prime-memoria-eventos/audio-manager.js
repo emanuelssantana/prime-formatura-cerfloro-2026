@@ -15,6 +15,6 @@ export class AudioManager {
   // play is called synchronously inside the user gesture; metadata only performs seek.
   try{await audio.play();}catch{if(serial===this.serial){complete();button.textContent='Áudio indisponível · tentar novamente';}}
  }
- async playMusic(id,url){this.stopVoice();this.selectSpeaker(id,url);if(!this.music)return;try{await this.music.play();}catch{this.music.pause();}}
+ async playMusic(id,url){this.stopVoice();this.selectSpeaker(id,url);if(!this.music)return false;this.music.muted=false;this.music.loop=true;try{await this.music.play();return true;}catch{this.music.pause();return false;}}
  pauseAll(){this.stopVoice();if(this.music)this.music.pause();}
 }
