@@ -28,8 +28,10 @@
   ],
   "drone": {},
   "delivery": {
-    "status": "preparing",
+    "status": "published",
     "mode": "free",
-    "label": "Fotografias em alta resolução · acesso gratuito"
+    "label": "Abrir álbum e baixar fotos na Banlek",
+    "url": "https://banlek.com/album/2a556b",
+    "providerVerified": true
   }
 }
