@@ -3,3 +3,9 @@ node_modules/
 *.key
 *.pem
 __pycache__/
+
+playwright-report/
+test-results/
+editorial_private*
+*.wav
+*.mp4

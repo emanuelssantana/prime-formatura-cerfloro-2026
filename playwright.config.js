@@ -1,0 +1,2 @@
+import{defineConfig}from'@playwright/test';
+export default defineConfig({testDir:'./tests/browser',timeout:45000,retries:1,use:{baseURL:'https://primeformatura.com.br',screenshot:'only-on-failure',trace:'retain-on-failure'},reporter:[['list'],['html',{open:'never'}]],projects:[{name:'chromium-desktop',use:{browserName:'chromium',viewport:{width:1440,height:900}}},{name:'webkit-mobile',use:{browserName:'webkit',viewport:{width:390,height:844},isMobile:true,hasTouch:true}}]});

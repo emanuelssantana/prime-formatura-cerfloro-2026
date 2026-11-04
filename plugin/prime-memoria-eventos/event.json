@@ -7,31 +7,10 @@
     "2026-11-04"
   ],
   "photographer": "Emanuel Santana",
-  "delivery": {
-    "url": "",
-    "mode": "free",
-    "label": "Fotografias em alta resolução · acesso gratuito",
-    "status": "preparing",
-    "providerVerified": false
-  },
-  "drone": {
-    "url": "",
-    "poster": "",
-    "rightsConfirmed": false,
-    "reviewed": false
-  },
-  "media": [],
-  "speakers": [],
-  "crm": {
-    "enabled": false,
-    "tenantId": null,
-    "installationId": null
-  },
-  "sources": [
-    "https://www.even3.com.br/iicerfloro-760904/"
-  ],
   "brand_code": "PRIME_FORMATURAS",
   "event_code": "CERFLORO_2026",
+  "media": [],
+  "speakers": [],
   "sessions": [],
   "timeline": [
     {
@@ -46,5 +25,11 @@
       "description": "A cobertura de Emanuel Santana reúne registros dos dias 3 e 4 de novembro. Novos lotes serão acrescentados ao mesmo endereço.",
       "source": "https://www.even3.com.br/iicerfloro-760904/"
     }
-  ]
+  ],
+  "drone": {},
+  "delivery": {
+    "status": "preparing",
+    "mode": "free",
+    "label": "Fotografias em alta resolução · acesso gratuito"
+  }
 }
