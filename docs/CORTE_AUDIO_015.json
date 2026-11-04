@@ -1,0 +1,40 @@
+{
+  "cutUTC": "2026-11-04T04:50:13.640270+00:00",
+  "srtCount": 4,
+  "cueCount": 1652,
+  "files": [
+    {
+      "file": "20261103_103921 Part 1.srt",
+      "sha256": "5c46ad98744f9dbbf718e90990faabc9e48c5b06dbfc5ae2d1ddb05b58c84a8a",
+      "stable": true,
+      "cues": 434
+    },
+    {
+      "file": "Default_20261103-144207.srt",
+      "sha256": "0565e44b5bba1ed368a048947009fa83b44a72efb5247330cc8b954863a8e38e",
+      "stable": true,
+      "cues": 69
+    },
+    {
+      "file": "Default_20261103-144722.srt",
+      "sha256": "2efa5e5fb66eca454548aa0048091b4ae488276d9ad517a8bcdda28f7d791078",
+      "stable": true,
+      "cues": 101
+    },
+    {
+      "file": "Default_20261103-145529.srt",
+      "sha256": "80bb45bc2d96a8517432d777ed20a21ff0aa769da9caeb4e2857365f2c6701d7",
+      "stable": true,
+      "cues": 1048
+    }
+  ],
+  "visualFindings": [
+    {
+      "source": "J81A3246.CR2 / PreviewImage",
+      "title": "Aproveitamento de resíduos florestais para geração de energia",
+      "authorText": "Thiago de Paula Protásio — DCF/ESAL/UFLA",
+      "review": "texto lido visualmente; nao equivale a identificacao facial nem sincronizacao com audio"
+    }
+  ],
+  "status": "INDEXADO_PRIVADO_NAO_PUBLICADO"
+}
