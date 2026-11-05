@@ -37,10 +37,10 @@ test('live entrance deck navigates, pauses and supports keyboard',async({page})=
  await deck.getByRole('button',{name:'Mostrar cartão 1',exact:true}).click();await expect(current()).toHaveAttribute('aria-label','Mostrar cartão 1');
 });
 
-test('final Banlek delivery button opens the supplied album',async({page})=>{
+test('canonical Fotto delivery and embedded tutorial match the published flow',async({page})=>{
  await page.goto('/fotos/ii-cerfloro-2026/',{waitUntil:'domcontentloaded'});
- const album=page.locator('#pm-album');await expect(album).toBeVisible();await expect(album).toHaveAttribute('href','https://banlek.com/album/2a556b');await expect(album).toHaveAttribute('rel','noopener');await expect(page.locator('.pm-free-period')).not.toContainText('A plataforma ainda está em definição');
- await page.locator('#pm-tutorial-open').click();await expect(page.locator('#pm-tutorial a')).toHaveAttribute('href','https://banlek.com/album/2a556b');
+ const album=page.locator('#pm-album');await expect(album).toBeVisible();await expect(album).toHaveAttribute('href','https://www.fotto.com.br/ii-congresso-florestal-rondonia-unir-ceeja/e/475942');await expect(album).toHaveAttribute('rel','noopener');await expect(page.locator('.pm-free-period')).not.toContainText('A plataforma ainda está em definição');
+ await expect(page.locator('#como-acessar-fotos iframe')).toHaveAttribute('src','https://www.youtube.com/embed/kYI63nZ2TfE'); await expect(page.locator('#plataformas-e-cupons')).toHaveCount(1);
 });
 
 test('official schedule exposes all sourced activities and planned time',async({page})=>{
@@ -55,7 +55,7 @@ test('XCM deck and Mugiwara frames on the public congress page', async ({page}) 
   await expect(page.locator('.hero-3d-card.pos-0')).toHaveCSS('border-top-color', 'rgb(255, 157, 0)');
   await expect(page.locator('.pm-shell')).toHaveCSS('background-color', 'rgb(9, 11, 24)');
   await expect(page.locator('.pm-team .mfx-live .mf-frame')).toHaveCount(2);
-  await expect(page.locator('#pm-tutorial-open')).toHaveCSS('background-color','rgb(206, 177, 255)');
+  await expect(page.locator('#como-acessar-fotos iframe')).toHaveAttribute('title','Tutorial: como acessar as fotografias');
 });
 
 test('congress recordings are reachable from the event entrance', async ({page, request}) => {
@@ -71,3 +71,4 @@ test('congress recordings are reachable from the event entrance', async ({page, 
     expect((await result.body()).subarray(4,8).toString()).toBe('ftyp');
   }
 });
+
