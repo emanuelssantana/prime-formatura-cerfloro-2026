@@ -16,6 +16,15 @@ export function exportPublic(d){
 if(process.argv[1]&&import.meta.url===new URL('file:///'+process.argv[1].replaceAll('\\','/')).href){
  const [input,output]=process.argv.slice(2);if(!input||!output)throw Error('Use: node scripts/export-public.mjs <editorial-private-file> <public-output>');
  if(path.resolve(input).startsWith(path.resolve('plugin')))throw Error('Private source must be outside public plugin');
- const result=exportPublic(JSON.parse(fs.readFileSync(input,'utf8').replace(/^\uFEFF/,'')));fs.writeFileSync(output,JSON.stringify(result,null,2));console.log('Only allowlisted approved public fields exported');
+ const result=exportPublic(JSON.parse(fs.readFileSync(input,'utf8').replace(/^\uFEFF/,'')));if(fs.existsSync(output)){
+  const previous=JSON.parse(fs.readFileSync(output,'utf8').replace(/^\uFEFF/,''));
+  const losses=['media','speakers','sessions'].flatMap(key=>{
+   const ids=new Set((result[key]||[]).map(x=>x.id));
+   return (previous[key]||[]).filter(x=>!ids.has(x.id)).map(x=>`${key}:${x.id}`);
+  });
+  if(losses.length)throw Error('Projection omits existing published records; reconcile source before replacement: '+losses.join(', '));
+ }
+ fs.writeFileSync(output,JSON.stringify(result,null,2));console.log('Only allowlisted approved public fields exported');
 }
+
 
