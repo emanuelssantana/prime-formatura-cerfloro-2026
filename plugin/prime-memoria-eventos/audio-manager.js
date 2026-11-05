@@ -8,8 +8,8 @@ export class AudioManager {
   this.stopVoice();this.selectSpeaker(id,music);const serial=++this.serial;
   const audio=this.makeAudio();this.voice=audio;this.onVoiceStart?.();this.label=button;audio.preload='metadata';audio.src=q.audioUrl;
   const complete=()=>{if(serial!==this.serial)return;this.stopVoice();};
-  audio.addEventListener('loadedmetadata',()=>{if(serial===this.serial)audio.currentTime=q.startMs/1000;},{once:true});
-  audio.addEventListener('timeupdate',()=>{if(audio.currentTime>=q.endMs/1000)complete();});
+  audio.addEventListener('loadedmetadata',()=>{if(serial===this.serial)audio.currentTime=(Number.isFinite(audio.duration)&&audio.duration*1000<q.endMs)?0:q.startMs/1000;},{once:true});
+  audio.addEventListener('timeupdate',()=>{if(Number.isFinite(audio.duration)&&audio.duration*1000<q.endMs)return;if(audio.currentTime>=q.endMs/1000)complete();});
   audio.addEventListener('ended',complete);audio.addEventListener('error',complete);
   button.textContent='Pausar trecho';button.setAttribute?.('aria-pressed','true');if(this.music)this.music.volume=.035;
   // play is called synchronously inside the user gesture; metadata only performs seek.
