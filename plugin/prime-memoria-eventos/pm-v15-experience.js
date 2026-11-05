@@ -520,6 +520,21 @@
     renderM26StoryCards(data.story_cards || [], data.photos);
     renderM26Videos(data.videos || []);
     renderM26Gallery(data.photos);
+    const groups = [
+      ['.pm-m26-pillars-grid','Os três dias de março · história e instituições'],
+      ['#pm-m26-storycards-wrap','Coleções de março · seis carrosséis'],
+      ['#pm-m26-filmes','Vídeos de março · sete registros'],
+      ['#pm-m26-galeria','Galeria de março · 112 fotografias']
+    ];
+    for (const [selector,label] of groups) {
+      const content=section.querySelector(selector);
+      if (!content) continue;
+      const group=document.createElement('details');group.className='pm-compact-group';
+      const summary=document.createElement('summary');summary.textContent=label;
+      content.before(group);group.append(summary,content);
+    }
+    window.dispatchEvent(new Event('pm-content-ready'));
+
   }
 
   function renderM26Deck(slides) {

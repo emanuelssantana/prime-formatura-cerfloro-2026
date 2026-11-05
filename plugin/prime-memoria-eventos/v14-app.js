@@ -281,3 +281,20 @@ const progress=document.querySelector('.pm-reading-progress');const updateProgre
 const tutorial=document.querySelector('#pm-tutorial');let tutorialFocus;
 document.querySelector('#pm-tutorial-open')?.addEventListener('click',e=>{tutorialFocus=e.currentTarget;audioManager.pauseAll();legacyMusic?.duck(true);tutorial.showModal();});
 document.querySelector('#pm-tutorial-close')?.addEventListener('click',()=>tutorial.close());tutorial?.addEventListener('close',()=>{legacyMusic?.duck(false);tutorialFocus?.focus();});
+
+// Preserve direct links into sections that are collapsed initially.
+function revealLinkedContent(hash,scroll=false){
+ if(!hash||hash==='#')return;
+ let id;try{id=decodeURIComponent(hash.slice(1));}catch{return;}
+ const target=document.getElementById(id);if(!target)return;
+ for(let parent=target;parent;parent=parent.parentElement){if(parent instanceof HTMLDetailsElement)parent.open=true;}
+ if(scroll)requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));
+}
+document.addEventListener('click',e=>{
+ const link=e.target.closest?.('a[href]');if(!link)return;
+ const url=new URL(link.href,location.href);
+ if(url.origin===location.origin&&url.pathname===location.pathname)revealLinkedContent(url.hash);
+});
+window.addEventListener('hashchange',()=>revealLinkedContent(location.hash,true));
+window.addEventListener('pm-content-ready',()=>revealLinkedContent(location.hash,true));
+revealLinkedContent(location.hash);

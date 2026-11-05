@@ -1631,3 +1631,14 @@
 .pm-shell .pm-quote> a{font-size:11px!important;display:inline-block;margin:8px}
 .pm-shell .pm-quote-summary p{margin:8px 0!important}
 .pm-shell .pm-speaker-bio{margin-bottom:12px}
+
+/* CDX055: collections and schedule expand in place, with stable anchors. */
+.pm-shell .pm-compact-group{margin:16px 0;padding:0 18px;border:1px solid #ffffff30;border-radius:14px;background:#101526}
+.pm-shell .pm-compact-group>summary{cursor:pointer;padding:20px 4px;font-weight:700;font-size:16px;color:#e8cc89}
+.pm-shell .pm-compact-group[open]{padding-bottom:18px}
+.pm-shell .pm-compact-group[open]>summary{border-bottom:1px solid #ffffff20;margin-bottom:16px}
+.pm-shell #pm-sessions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.pm-shell #pm-sessions article{padding:16px}
+.pm-shell #pm-sessions h3{font-size:17px;line-height:1.4}
+.pm-shell [id]{scroll-margin-top:130px}
+@media(max-width:600px){.pm-shell #pm-sessions{grid-template-columns:1fr}.pm-shell .pm-compact-group{padding:0 12px}.pm-shell .pm-compact-group>summary{font-size:14px}}
