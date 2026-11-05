@@ -187,9 +187,9 @@ function renderSpeakers(d){
   frame.append(el('p',s.institution||'','pm-eyebrow'),el('h3',s.name),el('p',s.topic||'','pm-speaker-topic'),Object.assign(el('details',null,'pm-speaker-bio'),{innerHTML:'<summary>Trajetória e pesquisa</summary>'}));
   
   frame.querySelector('.pm-speaker-bio').append(el('p',s.biography||''));
-  // Limitação curada: no máximo 9 fotos em carrossel compacto
+  // Selected photographs remain in one compact speaker carousel, up to twelve.
   const allPhotos=(s.photoIds||[]).map(id=>mediaId.get(id)).filter(x=>x?.status==='published');
-  const photos=allPhotos.slice(0, 2);
+  const photos=allPhotos.slice(0, 12);
   if(photos.length){
     frame.append(el('h4',`Fotografias em destaque (${photos.length} fotografias selecionadas)`),renderSpeakerCarousel(photos, s.name));
   }
